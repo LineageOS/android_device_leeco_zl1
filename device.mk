@@ -159,12 +159,6 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
-# Display calibration
-PRODUCT_PACKAGES += \
-    FOSSConfig.xml \
-    qdcm_calib_data_samsung_s6e3fa3_1080p_cmd_mode_dsi_panel.xml \
-    libjni_livedisplay
-
 # Doze mode
 PRODUCT_PACKAGES += \
     LeEcoDoze
@@ -215,10 +209,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     lights.msm8996
-
-# LiveDisplay native
-PRODUCT_PACKAGES += \
-    libjni_livedisplay
 
 # Media
 PRODUCT_COPY_FILES += \
