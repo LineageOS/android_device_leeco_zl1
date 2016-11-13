@@ -70,7 +70,6 @@ write_makefiles "$MY_DIR"/proprietary-files-qc-perf.txt
 echo "endif" >> "$PRODUCTMK"
 
 cat << EOF >> "$ANDROIDMK"
-
 endif
 
 EOF
@@ -79,4 +78,3 @@ printf '\n%s\n' "\$(call inherit-product, vendor/qcom/binaries/msm8996/graphics/
 
 # We are done!
 write_footers
-

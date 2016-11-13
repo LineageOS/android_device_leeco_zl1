@@ -17,8 +17,8 @@
 
 set -e
 
-DEVICE=x2
-VENDOR=leeco
+export DEVICE=x2
+export VENDOR=leeco
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
