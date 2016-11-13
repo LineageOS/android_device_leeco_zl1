@@ -117,6 +117,9 @@ static int BRIGHTNESS_RAMP[RAMP_SIZE]
         = { 0, 12, 25, 37, 50, 72, 85, 100 };
 #define RAMP_STEP_DURATION 50
 
+/* The LeMax's 2 maximum brightness value */
+#define X2_MAX_BRIGHTNESS 4000
+
 /**
  * device methods
  */
@@ -191,6 +194,8 @@ set_light_backlight(struct light_device_t* dev,
 {
     int err = 0;
     int brightness = rgb_to_brightness(state);
+    /* Convert the 0-255 value to fit the Max 2's stupidly high range */
+    brightness = (brightness / 255.0) * X2_MAX_BRIGHTNESS;
     if(!dev) {
         return -1;
     }
