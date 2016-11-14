@@ -1,0 +1,2 @@
+# qseecomd runs under the tee context
+allow tee persist_file:file r_file_perms;
