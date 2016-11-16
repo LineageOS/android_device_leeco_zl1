@@ -83,7 +83,7 @@
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">53</integer>
+    <integer name="config_screenBrightnessSettingDefault">75</integer>
 
     <!-- Does the notification LED support multiple colors?
          Used to decide if the user can change the colors -->
