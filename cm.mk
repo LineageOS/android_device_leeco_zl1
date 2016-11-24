@@ -17,26 +17,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from oneplus3 device
-$(call inherit-product, device/oneplus/oneplus3/device.mk)
+$(call inherit-product, device/leeco/zl1/device.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := cm_oneplus3
-PRODUCT_DEVICE := oneplus3
-PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_BRAND := OnePlus
+PRODUCT_NAME := cm_zl1
+PRODUCT_DEVICE := zl1
+PRODUCT_MANUFACTURER := LeEco
+PRODUCT_BRAND := LeEco
 
-PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+PRODUCT_GMS_CLIENTID_BASE := android-leeco
 
-TARGET_VENDOR_PRODUCT_NAME := OnePlus3
-TARGET_VENDOR_DEVICE_NAME := OnePlus3
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus3 PRODUCT_NAME=OnePlus3
+TARGET_VENDOR_PRODUCT_NAME := LePro3
+TARGET_VENDOR_DEVICE_NAME := le_zl1
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=le_zl1 PRODUCT_NAME=LePro3
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=OnePlus/OnePlus3/OnePlus3:6.0.1/MMB29M/362280:user/release-keys \
-    PRIVATE_BUILD_DESC="OnePlus3-user 6.0.1 MMB29M 24 dev-keys"
+    BUILD_FINGERPRINT=LeEco/le_zl1/LePro3:6.0.1/MMB29M/362280:user/release-keys \
+    PRIVATE_BUILD_DESC="LePro3-user 6.0.1 MMB29M 24 dev-keys"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
-TARGET_VENDOR := oneplus
+TARGET_VENDOR := leeco

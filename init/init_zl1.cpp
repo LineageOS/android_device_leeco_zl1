@@ -89,23 +89,13 @@ void init_alarm_boot_properties()
 
 void vendor_load_properties() {
     char device[PROP_VALUE_MAX];
-    char rf_version[PROP_VALUE_MAX];
     int rc;
 
     rc = property_get("ro.cm.device", device);
-    if (!rc || strncmp(device, "oneplus3", PROP_VALUE_MAX))
+    if (!rc || strncmp(device, "zl1", PROP_VALUE_MAX))
         return;
 
-    property_get("ro.boot.rf_version", rf_version);
-
-    if (strstr(rf_version, "11") || strstr(rf_version, "31")) {
-        /* Chinese/America*/
-        property_set("ro.product.model", "ONEPLUS A3000");
-    } else if (strstr(rf_version, "21")) {
-        /* Asia/Europe */
-        property_set("ro.product.model", "ONEPLUS A3003");
-    }
-
+    property_set("ro.product.model", "LeEco Le Pro3");
     init_alarm_boot_properties();
 }
 

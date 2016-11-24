@@ -20,7 +20,7 @@
 # definition file).
 #
 
-$(call inherit-product-if-exists, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
+$(call inherit-product-if-exists, vendor/leeco/zl1/zl1-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -304,4 +304,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/qca_cld/WCNSS_cfg.dat
 
 # Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+#$(call inherit-product, device/oppo/common/common.mk)

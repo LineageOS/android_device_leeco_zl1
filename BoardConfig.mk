@@ -24,15 +24,15 @@
 USE_CLANG_PLATFORM_BUILD := true
 
 # Inherit from oppo-common
--include device/oppo/common/BoardConfigCommon.mk
+#-include device/oppo/common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := OnePlus3,oneplus3
+TARGET_OTA_ASSERT_DEVICE := le_zl1,zl1,lepro3
 
-PLATFORM_PATH := device/oneplus/oneplus3
+PLATFORM_PATH := device/leeco/zl1
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
-BOARD_VENDOR := oneplus
+BOARD_VENDOR := leeco
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8996
@@ -60,17 +60,17 @@ ENABLE_CPUSETS := true
 TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_TAGS_OFFSET := 0x02000000
-BOARD_RAMDISK_OFFSET     := 0x02200000
+BOARD_KERNEL_TAGS_OFFSET := 0x00000100
+BOARD_RAMDISK_OFFSET     := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/oneplus/msm8996
-TARGET_KERNEL_CONFIG := cyanogenmod_oneplus3_defconfig
+TARGET_KERNEL_SOURCE := kernel/leeco/msm8996
+TARGET_KERNEL_CONFIG := cyanogenmod_zl1_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 # QCOM hardware
@@ -140,6 +140,7 @@ TARGET_USES_OVERLAY := true
 USE_OPENGL_RENDERER := true
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
+HAVE_ADRENO_SOURCE := false
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
@@ -158,8 +159,8 @@ TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_oneplus3
-TARGET_RECOVERY_DEVICE_MODULES := libinit_oneplus3
+TARGET_INIT_VENDOR_LIB := libinit_zl1
+TARGET_RECOVERY_DEVICE_MODULES := libinit_zl1
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
 # Keystore
@@ -175,9 +176,9 @@ TARGET_USES_NQ_NFC := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3154116608
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 57436708864
-BOARD_FLASH_BLOCK_SIZE := 262144
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4294967296
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 58134835200
+BOARD_FLASH_BLOCK_SIZE := 4096
 
 # RIL
 TARGET_RIL_VARIANT := caf
@@ -216,4 +217,4 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/oneplus/oneplus3/BoardConfigVendor.mk
+#-include vendor/oneplus/oneplus3/BoardConfigVendor.mk
