@@ -285,6 +285,10 @@ on post-fs
     # to mkdir for letv bootvideo feature
     mkdir /data/fastplay 0777 system system
 
+    # Link formware to /vendor/firmware
+    # This is needed for liboemcrypto.so to find the firmware
+    ln -s /system/etc/firmware/ /vendor/firmware
+
 # msm specific files that need to be created on /data
 on post-fs-data
     #Create directories for Fingerprint
