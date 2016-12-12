@@ -339,9 +339,6 @@ on post-fs-data
     mkdir /data/misc/audio/acdbdata 0770 media audio
     mkdir /data/misc/audio/acdbdata/delta 0770 media audio
 
-    # Create directory used by the DASH client
-    mkdir /data/misc/dash 0770 media audio
-
     # Create directory used by display clients
     mkdir /data/misc/display 0770 system graphics
 
@@ -627,16 +624,6 @@ service mdtpd /system/vendor/bin/mdtpd
     class late_start
     user root
     group system radio drmrpc
-
-service dashd /sbin/dashd
-    class core
-    critical
-    seclabel u:r:dashd:s0
-    group root system log
-    writepid /dev/cpuset/system-background/tasks
-
-on property:init.svc.healthd=restarting
-    restart dashd
 
 service iop /system/bin/iop
     class main

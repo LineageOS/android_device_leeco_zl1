@@ -14,7 +14,6 @@
 /data/fpc_images(/.*)?                                          u:object_r:fpc_images_file:s0
 /sys/devices/soc/soc:fpc_fpc1020/irq                            u:object_r:sysfs_fpc_irq:s0
 
-/dev/dash                                                       u:object_r:input_device:s0
 /sys/devices/soc/.*ssusb/power_supply/usb(/.*)?                 u:object_r:sysfs_usb_supply:s0
 
 /sys/devices/soc/qpnp-smbcharger-[0-9a-f]+/power_supply/battery/capacity u:object_r:sysfs_batteryinfo:s0
