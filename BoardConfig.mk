@@ -125,7 +125,7 @@ TARGET_LDPRELOAD := libNimsWrap.so
 BOARD_USES_QCNE := true
 
 # Crypto
-# TARGET_HW_DISK_ENCRYPTION := true
+TARGET_HW_DISK_ENCRYPTION := true
 
 # Display
 BOARD_USES_ADRENO := true
