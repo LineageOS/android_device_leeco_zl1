@@ -26,4 +26,3 @@
 /sys/kernel/debug/rmt_storage/rmts                              u:object_r:debugfs_rmts:s0
 
 /system/bin/ifaadaemon                                          u:object_r:ifaadaemon_exec:s0
-/system/bin/init\.qcom\.qseecomd\.sh u:object_r:init-qcom-qseecomd-sh_exec:s0

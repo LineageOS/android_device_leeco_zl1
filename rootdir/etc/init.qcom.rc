@@ -288,9 +288,6 @@ on post-fs
     # Link formware to /vendor/firmware
     # This is needed for liboemcrypto.so to find the firmware
     ln -s /system/etc/firmware/ /vendor/firmware
-    # Start qseecomd. Needs to be started before /data is mounted for FBE
-    start qseecomd
-    exec - root root system -- /system/bin/init.qcom.qseecomd.sh
 
 # msm specific files that need to be created on /data
 on post-fs-data
