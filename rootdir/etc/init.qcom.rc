@@ -339,6 +339,9 @@ on post-fs-data
     mkdir /data/misc/audio/acdbdata 0770 media audio
     mkdir /data/misc/audio/acdbdata/delta 0770 media audio
 
+    # Create directory used by the DASH client
+    # Note that this is the DASH protocol
+    mkdir /data/misc/dash 0770 media audio
     # Create directory used by display clients
     mkdir /data/misc/display 0770 system graphics
 
