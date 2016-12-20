@@ -26,14 +26,10 @@ lib/libmmjpeg_interface.so
 lib/libmpbase.so
 lib/libmpkernel.so
 lib/libqomx_core.so
-#vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-#vendor/lib/libllvd_smore.so
-#vendor/lib/libmmcamera_chromaflash_lib.so
-#vendor/lib/libmmcamera_optizoom_lib.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
@@ -57,7 +53,6 @@ vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
-#vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
 vendor/lib/libmmcamera_hvx_zzHDR.so
@@ -128,12 +123,9 @@ vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-#vendor/lib/libois_rohm_bu63165gwl.so
-#vendor/lib/liboptizoom.so|5cd3d2b56986eebe4a0d4605d13be825886ae017
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
-#vendor/lib/libseemore.so
 vendor/lib/libSonyIMX298PdafLibrary.so
 
 # Camera actuators
@@ -387,18 +379,14 @@ vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
 # DASH
-#-sbin/dashd:rootfs
+-sbin/dashd:rootfs
 
 # Display calibration
 -etc/qdcm_calib_data_mdss_dsi_ft8716_1080p_video.xml
 -etc/qdcm_calib_data_mdss_dsi_s6d6fa1_1080p_video.xml
 
 # Fingerprint sensor
-#bin/qfp-daemon
 lib64/hw/fingerprint.msm8996.so
-#lib64/lib_fpc_tac_shared.so
-#vendor/lib64/libqfp-service.so
-#vendor/lib64/qfp.wakeup.so
 
 # NFC firmware
 vendor/firmware/libpn548ad_fw.so
