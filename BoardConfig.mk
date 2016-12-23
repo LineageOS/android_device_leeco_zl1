@@ -20,9 +20,9 @@
 # definition file).
 #
 
-TARGET_OTA_ASSERT_DEVICE := le_x2,LeMax2_CN,LeMax2_NA
+TARGET_OTA_ASSERT_DEVICE := le_zl1,LePro3_CN,LePro3_NA
 
-DEVICE_PATH := device/leeco/x2
+DEVICE_PATH := device/leeco/zl1
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -67,7 +67,7 @@ TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/leeco/msm8996
-TARGET_KERNEL_CONFIG := cyanogenmod_x2_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_zl1_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 # QCOM hardware
@@ -157,8 +157,8 @@ TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_x2
-TARGET_RECOVERY_DEVICE_MODULES := libinit_x2
+TARGET_INIT_VENDOR_LIB := libinit_zl1
+TARGET_RECOVERY_DEVICE_MODULES := libinit_zl1
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
 # Keystore
@@ -217,4 +217,4 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/leeco/x2/BoardConfigVendor.mk
+-include vendor/leeco/zl1/BoardConfigVendor.mk

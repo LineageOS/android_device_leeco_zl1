@@ -17,7 +17,7 @@
 
 set -e
 
-export DEVICE=x2
+export DEVICE=zl1
 export VENDOR=leeco
 
 # Load extractutils and do some sanity checks

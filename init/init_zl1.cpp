@@ -126,11 +126,11 @@ void vendor_load_properties() {
     int rc;
 
     rc = property_get("ro.cm.device", device, NULL);
-    if (!rc || strncmp(device, "x2", PROP_VALUE_MAX))
+    if (!rc || strncmp(device, "zl1", PROP_VALUE_MAX))
         return;
 
-    property_set("ro.config.product", "x2");
-    property_set("ro.product.model", "Le X829");
+    property_set("ro.config.product", "zl1");
+    property_set("ro.product.model", "Le X727");
 
     init_alarm_boot_properties();
 }

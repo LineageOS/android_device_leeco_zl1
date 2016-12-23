@@ -20,7 +20,7 @@
 # definition file).
 #
 
-$(call inherit-product-if-exists, vendor/leeco/x2/x2-vendor.mk)
+$(call inherit-product-if-exists, vendor/leeco/zl1/zl1-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -264,7 +264,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     qdcm_calib_data_le_x2_mdss_dsi_sharp_qhd_dualdsi_cmd.xml \
     qdcm_calib_data_le_x2_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml \
-    qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
+    qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml \
+    qdcm_calib_data_mdss_dsi_s6d6fa1_1080p_video.xml \
+    qdcm_calib_data_mdss_dsi_ft8716_1080p_video.xml
 
 # QMI
 PRODUCT_PACKAGES += \

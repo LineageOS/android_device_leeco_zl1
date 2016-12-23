@@ -1,4 +1,5 @@
 # Audio
+etc/ad_calib_zl1.cfg
 etc/firmware/tfa98xx.cnt
 etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
 vendor/lib/libsurround_3mic_proc.so

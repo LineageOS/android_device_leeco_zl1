@@ -1,6 +1,6 @@
 Copyright 2016 - The CyanogenMod Project
 
-Device configuration for Letv Max2 (Le X829)
+Device configuration for Letv Pro3 (Le X727)
 =====================================
 
 Basic   | Spec Sheet

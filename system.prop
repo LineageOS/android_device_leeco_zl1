@@ -31,17 +31,6 @@ qcom.hw.aac.encoder=true
 # Bluetooth
 bt.max.hfpclient.connections=1
 qcom.bluetooth.soc=rome
-ro.bluetooth.dun=true
-ro.bluetooth.hfp.ver=1.6
-ro.bluetooth.sap=true
-ro.qualcomm.bluetooth.ftp=true
-ro.qualcomm.bluetooth.hfp=true
-ro.qualcomm.bluetooth.hsp=true
-ro.qualcomm.bluetooth.map=true
-ro.qualcomm.bluetooth.nap=true
-ro.qualcomm.bluetooth.opp=true
-ro.qualcomm.bluetooth.pbap=true
-
 
 # Camera
 persist.camera.imglib.fddsp=1
@@ -138,7 +127,7 @@ persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
 persist.radio.multisim.config=dsds
-persist.volte_enabled_by_hw=1
+persist.volte_enalbed_by_hw=1
 persist.radio.data_ltd_sys_ind=1
 ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
@@ -183,17 +172,17 @@ wifi.interface=wlan0
 
 # Sensor
 ro.qcom.ad=1
-ro.qcom.ad.calib.data=/system/etc/ad_calib_x2.cfg
+ro.qcom.ad.calib.data=/system/etc/ad_calib_zl1.cfg
 ro.qcom.ad.sensortype=3
 
 #Fingerprint up/down for alipay.
 persist.qfp.touch_enabled=1
 
 ro.config.le_hardware_version=HW_1.0.0
-ro.le.mtpname=Le Max2
+ro.le.mtpname=Le Pro3
 
 ro.le.regist_wechat_key=true
-ro.internal.model=Le X820
+ro.internal.model=Le X727
 ro.vendor.wechatpay.support=true
 
 # Fastcharge

@@ -25,7 +25,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),x2)
+ifeq ($(TARGET_DEVICE),zl1)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
@@ -70,6 +70,6 @@ $(IMS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(IMS_SYMLINKS)
 
-include device/leeco/x2/tftp.mk
+include device/leeco/zl1/tftp.mk
 
 endif

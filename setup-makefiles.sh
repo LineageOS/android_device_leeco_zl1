@@ -18,7 +18,7 @@
 set -e
 
 # Required!
-DEVICE=x2
+DEVICE=zl1
 VENDOR=leeco
 
 # Load extractutils and do some sanity checks

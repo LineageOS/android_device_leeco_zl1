@@ -17,25 +17,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device
-$(call inherit-product, device/leeco/x2/device.mk)
+$(call inherit-product, device/leeco/zl1/device.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := cm_x2
-PRODUCT_DEVICE := x2
+PRODUCT_NAME := cm_zl1
+PRODUCT_DEVICE := zl1
 PRODUCT_MANUFACTURER := LeMobile
 PRODUCT_BRAND := LeEco
 
 PRODUCT_GMS_CLIENTID_BASE := android-letv
 
-TARGET_VENDOR_PRODUCT_NAME := LeMax2_NA
-TARGET_VENDOR_DEVICE_NAME := x2
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=x2 PRODUCT_NAME=x2
+TARGET_VENDOR_PRODUCT_NAME := ZL1_NA
+TARGET_VENDOR_DEVICE_NAME := zl1
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=zl1 PRODUCT_NAME=zl1
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=LeEco/LeMax2_NA/le_x2_na:6.0.1/FIXNAOP5801607182S/letv07181411:user/release-keys \
-    PRIVATE_BUILD_DESC="le_x2_na-user 6.0.1 FIXNAOP5801607182S eng.letv.20160718.140847 release-keys"
+    BUILD_FINGERPRINT=LeEco/ZL1_NA/le_zl1:6.0.1/WEXNAOP5801911011S/letv11010404:user/release-keys \
+    PRIVATE_BUILD_DESC="le_zl1-user 6.0.1 WEXNAOP5801911011S eng.letv.20161101.040050 release-keys"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
