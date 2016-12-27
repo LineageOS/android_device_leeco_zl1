@@ -1,8 +1,46 @@
 # Audio
-etc/ad_calib_zl1.cfg
+etc/ad_calib_le_zl1.cfg
 etc/firmware/tfa98xx.cnt
 etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
 vendor/lib/libsurround_3mic_proc.so
+
+# Audio ACDB
+etc/acdbdata/Fluid/Fluid_Bluetooth_cal.acdb
+etc/acdbdata/Fluid/Fluid_General_cal.acdb
+etc/acdbdata/Fluid/Fluid_Global_cal.acdb
+etc/acdbdata/Fluid/Fluid_Handset_cal.acdb
+etc/acdbdata/Fluid/Fluid_Hdmi_cal.acdb
+etc/acdbdata/Fluid/Fluid_Headset_cal.acdb
+etc/acdbdata/Fluid/Fluid_Speaker_cal.acdb
+etc/acdbdata/Liquid/Liquid_Bluetooth_cal.acdb
+etc/acdbdata/Liquid/Liquid_General_cal.acdb
+etc/acdbdata/Liquid/Liquid_Global_cal.acdb
+etc/acdbdata/Liquid/Liquid_Handset_cal.acdb
+etc/acdbdata/Liquid/Liquid_Hdmi_cal.acdb
+etc/acdbdata/Liquid/Liquid_Headset_cal.acdb
+etc/acdbdata/Liquid/Liquid_Speaker_cal.acdb
+etc/acdbdata/MTP/letv/MTP_Bluetooth_cal.acdb
+etc/acdbdata/MTP/letv/MTP_General_cal.acdb
+etc/acdbdata/MTP/letv/MTP_Global_cal.acdb
+etc/acdbdata/MTP/letv/MTP_Handset_cal.acdb
+etc/acdbdata/MTP/letv/MTP_Hdmi_cal.acdb
+etc/acdbdata/MTP/letv/MTP_Headset_cal.acdb
+etc/acdbdata/MTP/letv/MTP_Speaker_cal.acdb
+etc/acdbdata/MTP/letv/workspaceFile.qwsp
+etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+etc/acdbdata/MTP/MTP_General_cal.acdb
+etc/acdbdata/MTP/MTP_Global_cal.acdb
+etc/acdbdata/MTP/MTP_Handset_cal.acdb
+etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+etc/acdbdata/MTP/MTP_Headset_cal.acdb
+etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
+etc/acdbdata/QRD/QRD_General_cal.acdb
+etc/acdbdata/QRD/QRD_Global_cal.acdb
+etc/acdbdata/QRD/QRD_Handset_cal.acdb
+etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
+etc/acdbdata/QRD/QRD_Headset_cal.acdb
+etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 
 # Camera
 bin/mm-qcamera-daemon
@@ -246,14 +284,9 @@ vendor/lib/libmmcamera_isp_sce40.so
 vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
-# Display calibration
--etc/qdcm_calib_data_le_x2_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
--etc/qdcm_calib_data_le_x2_mdss_dsi_truly_qhd_dualdsi_cmd_pvt.xml
--etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
-
 # Fingerprint sensor
-bin/qfp-daemon
-vendor/lib64/hw/fingerprint.qcom.so
+bin/gx_fpd
+lib64/hw/fingerprint.msm8996.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/qfp.wakeup.so
 

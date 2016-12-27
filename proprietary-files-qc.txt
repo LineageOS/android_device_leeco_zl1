@@ -148,7 +148,7 @@ framework/com.qti.location.sdk.jar
 -lib/libloc_api_v02.so
 -lib64/libloc_api_v02.so
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
--priv-app/xtra_t_app/xtra_t_app.apk
+#-priv-app/xtra_t_app/xtra_t_app.apk
 vendor/bin/slim_daemon
 vendor/lib/hw/flp.default.so
 vendor/lib/libalarmservice_jni.so
