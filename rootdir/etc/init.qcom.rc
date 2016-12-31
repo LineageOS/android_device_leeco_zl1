@@ -178,6 +178,17 @@ on boot
     chown system system /sys/devices/soc/soc:fpc_fpc1020/proximity_state
     chmod 0666 /dev/qseecom
 
+    # for fingerprint calibration
+    chown system system /persist/qc_senseid/bg_estimation/bg_basis.dat
+    chown system system /persist/qc_senseid/bg_estimation/bg_small1_basis.dat
+    chown system system /persist/qc_senseid/bg_estimation/bg_small1_off_basis.dat
+    chown system system /persist/qc_senseid/bg_estimation/bg_small2_basis.dat
+    chown system system /persist/qc_senseid/bg_estimation/bg_small2_off_basis.dat
+
+    chown system system /dev/goodix_fp
+    chmod 0644 /dev/goodix_fp
+    chmod 0644 /dev/smartpa_f0_detect
+
     # NFC
     chmod 0666 /dev/pn544
     chown nfc nfc /dev/pn544
@@ -498,6 +509,11 @@ on post-fs-data
     write /data/misc/radio/db_check_done 0
     chown radio radio /data/misc/radio/db_check_done
     chmod 0660 /data/misc/radio/db_check_done
+
+service gx_fpd /system/bin/gx_fpd
+    class late_start
+    user system
+    group system
 
 # start camera server as daemon
 service qcamerasvr /system/bin/mm-qcamera-daemon
