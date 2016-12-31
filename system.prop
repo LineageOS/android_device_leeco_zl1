@@ -2,7 +2,8 @@ ro.display.series=Le Pro3
 
 # Audio
 ro.qc.sdk.audio.ssr=false
-ro.qc.sdk.audio.fluencetype=fluence
+persist.audio.ssr.3mic=false
+ro.qc.sdk.audio.fluencetype=none
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 persist.audio.fluence.speaker=true
@@ -10,7 +11,7 @@ tunnel.audio.encode=false
 media.aac_51_output_enabled=true
 audio.offload.buffer.size.kb=32
 audio.offload.video=true
-audio.offload.pcm.16bit.enable=false
+audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
 audio.offload.track.enable=false
 audio.deep_buffer.media=true
@@ -25,7 +26,7 @@ audio.offload.passthrough=false
 audio.offload.multiple.enabled=true
 audio.offload.min.duration.secs=30
 af.fast_track_multiplier=1
-audio_hal.period_size=160
+audio_hal.period_size=192
 
 # Bluetooth
 bt.max.hfpclient.connections=1
@@ -53,7 +54,24 @@ persist.data.netmgrd.qos.enable=true
 persist.data.mode=concurrent
 
 # Fingerprint
-persist.qfp=false
+persist.qfp=true
+persist.qfp.fd_enabled=1
+persist.qfp.ssc_enable_island=1
+persist.qfp.ssc_fgoff_dil_s1=10
+persist.qfp.ssc_fgoff_dil_home=10
+persist.qfp.finger_evt_enabled=1
+
+persist.qfp.ssc_thresh_s1=0.570
+persist.qfp.ssc_thresh_s1_off=0.0
+persist.qfp.ssc_thresh_s1_rub=0.0
+persist.qfp.ssc_thresh_s2=0.430
+persist.qfp.ssc_thresh_s2_off=0.0
+persist.qfp.ssc_thresh_s2_touch=0.350
+persist.qfp.ssc_thresh_s2_lift=0.330
+
+persist.qfp.filter_movefinger=0
+persist.qfp.filter_holdfinger=50000
+persist.qfp.filter_insuffcov=6000
 
 # GPS
 persist.gps.qc_nlp_in_use=1
@@ -100,7 +118,6 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
-persist.radio.multisim.config=dsds
 persist.volte_enalbed_by_hw=1
 persist.radio.data_ltd_sys_ind=1
 ro.telephony.default_network=22,22
