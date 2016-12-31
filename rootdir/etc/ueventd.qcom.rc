@@ -52,6 +52,8 @@
 /dev/ovr*                 0666   system     system
 /dev/bus/usb/*            0660   system     usb
 /dev/graphics/*           0660   system     graphics
+/dev/goodix_fp            0666   system     system
+
 
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
