@@ -25,7 +25,7 @@ audio.offload.passthrough=false
 audio.offload.multiple.enabled=true
 audio.offload.min.duration.secs=30
 af.fast_track_multiplier=1
-audio_hal.period_size=160
+audio_hal.period_size=192
 qcom.hw.aac.encoder=true
 
 # Bluetooth
@@ -54,27 +54,20 @@ persist.qfp=true
 persist.qfp.fd_enabled=1
 persist.qfp.ssc_enable_island=1
 persist.qfp.ssc_fgoff_dil_s1=10
-persist.qfp.ssc_fgoff_dil_home=1
+persist.qfp.ssc_fgoff_dil_home=10
 persist.qfp.finger_evt_enabled=1
 
 persist.qfp.ssc_thresh_s1=0.570
 persist.qfp.ssc_thresh_s1_off=0.0
-persist.qfp.ssc_thresh_s1_rub=1500
+persist.qfp.ssc_thresh_s1_rub=0.0
 persist.qfp.ssc_thresh_s2=0.430
-persist.qfp.ssc_thresh_s2_off=4.0
-persist.qfp.ssc_thresh_s2_touch=0.430
-persist.qfp.ssc_thresh_s2_lift=0.410
+persist.qfp.ssc_thresh_s2_off=0.0
+persist.qfp.ssc_thresh_s2_touch=0.350
+persist.qfp.ssc_thresh_s2_lift=0.330
 
-persist.qfp.filter_movefinger=1000
+persist.qfp.filter_movefinger=0
 persist.qfp.filter_holdfinger=50000
 persist.qfp.filter_insuffcov=6000
-persist.qfp.filter_liftfinger=0
-
-persist.qfp.ssc_basis_s1=/persist/qc_senseid/bg_estimation/bg_small1_basis.dat
-persist.qfp.ssc_basis_s1_off=/persist/qc_senseid/bg_estimation/bg_small1_off_basis.dat
-persist.qfp.ssc_basis_s2=/persist/qc_senseid/bg_estimation/bg_small2_basis.dat
-persist.qfp.ssc_basis_s2_off=/persist/qc_senseid/bg_estimation/bg_small2_off_basis.dat
-persist.qfp.eeprom=/sys/bus/i2c/devices/8-0051/eeprom
 
 # GPS
 persist.gps.qc_nlp_in_use=1
@@ -126,7 +119,6 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
-persist.radio.multisim.config=dsds
 persist.volte_enalbed_by_hw=1
 persist.radio.data_ltd_sys_ind=1
 ro.telephony.default_network=22,22
