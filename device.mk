@@ -278,10 +278,6 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
-# Sensors
-PRODUCT_PACKAGES += \
-    sensors.msm8996
-
 # stlport required for Camera blobs
 PRODUCT_PACKAGES += \
     libstlport

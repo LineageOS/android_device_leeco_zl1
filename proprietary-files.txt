@@ -438,6 +438,10 @@ etc/firmware/modem_pr/mcfg_sw_verizon.mbn
 # Sensors
 etc/sensors/hals.conf
 etc/sensors/sensor_def_qcomdev.conf
+lib/libsensorservice.so
+lib64/libsensorservice.so
+lib/hw/sensors.msm8996.so
+lib64/hw/sensors.msm8996.so
 
 # Signed graphics firmware
 etc/firmware/a530_gpmu.fw2
