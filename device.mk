@@ -282,6 +282,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.msm8996
 
+# stlport required for Camera blobs
+PRODUCT_PACKAGES += \
+    libstlport
+
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
