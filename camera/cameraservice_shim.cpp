@@ -18,13 +18,15 @@
 
 extern "C" {
 
-extern char * _ZNK7android8hardware7ICamera22getInterfaceDescriptorEv();
+extern uint _ZNK7android8hardware14ICameraService22getInterfaceDescriptorEv();
 
-char * _ZNK7android14ICameraService22getInterfaceDescriptorEv(){
-	return _ZNK7android8hardware7ICamera22getInterfaceDescriptorEv();
+uint _ZNK7android14ICameraService22getInterfaceDescriptorEv(){
+	return _ZNK7android8hardware14ICameraService22getInterfaceDescriptorEv();
 }
 
-char * _ZNK7android7ICamera22getInterfaceDescriptorEv(){
+extern uint _ZNK7android8hardware7ICamera22getInterfaceDescriptorEv();
+
+uint _ZNK7android7ICamera22getInterfaceDescriptorEv(){
 	return _ZNK7android8hardware7ICamera22getInterfaceDescriptorEv();
 }
 
@@ -40,11 +42,13 @@ uint _ZN7android7ICamera10descriptorE(){
 	return _ZN7android8hardware7ICamera10descriptorE();
 }
 
-extern uint _ZTTN7android8hardware15BnCameraServiceE();
+extern uint _ZTVN7android11BnInterfaceINS_8hardware7ICameraEEE();
 
 uint _ZTVN7android15BnCameraServiceE(){
-	return _ZTTN7android8hardware15BnCameraServiceE();
+	return _ZTVN7android11BnInterfaceINS_8hardware7ICameraEEE();
 }
+
+extern uint _ZTTN7android8hardware15BnCameraServiceE();
 
 uint _ZTTN7android15BnCameraServiceE(){
 	return _ZTTN7android8hardware15BnCameraServiceE();
@@ -70,11 +74,13 @@ uint _ZThn4_N7android15BnCameraService10onTransactEjRKNS_6ParcelEPS1_j(uint code
     return _ZN7android8hardware15BnCameraService10onTransactEjRKNS_6ParcelEPS2_j(code, data, reply, flags);
 }
 
-extern uint _ZTTN7android8hardware8BnCameraE();
+extern uint _ZTVN7android8hardware8BnCameraE();
 
 uint _ZTVN7android8BnCameraE(){
-    return _ZTTN7android8hardware8BnCameraE();
+    return _ZTVN7android8hardware8BnCameraE();
 }
+
+extern uint _ZTTN7android8hardware8BnCameraE();
 
 uint _ZTTN7android8BnCameraE(){
     return _ZTTN7android8hardware8BnCameraE();
@@ -92,11 +98,13 @@ uint _ZN7android17ICameraDeviceUser10descriptorE(){
     return _ZN7android8hardware7camera217ICameraDeviceUser10descriptorE();
 }
 
-extern uint _ZTTN7android8hardware7camera218BnCameraDeviceUserE();
+extern uint _ZTVN7android8hardware7camera218BnCameraDeviceUserE();
 
 uint _ZTVN7android18BnCameraDeviceUserE(){
-    return _ZTTN7android8hardware7camera218BnCameraDeviceUserE();
+    return _ZTVN7android8hardware7camera218BnCameraDeviceUserE();
 }
+
+extern uint _ZTTN7android8hardware7camera218BnCameraDeviceUserE();
 
 uint _ZTTN7android18BnCameraDeviceUserE(){
     return _ZTTN7android8hardware7camera218BnCameraDeviceUserE();
@@ -107,6 +115,8 @@ extern uint _ZN7android8hardware7camera218BnCameraDeviceUser10onTransactEjRKNS_6
 uint _ZN7android18BnCameraDeviceUser10onTransactEjRKNS_6ParcelEPS1_j(uint code, void* data, void* reply, uint_t flags){
     return _ZN7android8hardware7camera218BnCameraDeviceUser10onTransactEjRKNS_6ParcelEPS3_j(code, data, reply, flags);
 }
+
+extern uint _ZThn4_N7android8hardware7camera218BnCameraDeviceUser10onTransactEjRKNS_6ParcelEPS3_j(uint, void*, void*, uint_t);
 
 uint _ZThn4_N7android18BnCameraDeviceUser10onTransactEjRKNS_6ParcelEPS1_j(uint code, void* data, void* reply, uint_t flags){
     return _ZN7android8hardware7camera218BnCameraDeviceUser10onTransactEjRKNS_6ParcelEPS3_j(code, data, reply, flags);
