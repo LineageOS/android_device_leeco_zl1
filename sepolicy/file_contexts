@@ -9,6 +9,16 @@
 
 /data/oemnvitems(/.*)?                                          u:object_r:nv_data_file:s0
 
+/dev/gf66xx-spi     u:object_r:gx_fpd_device:s0
+/dev/ttyACM[0-9]*   u:object_r:gx_fpd_device:s0
+/dev/goodix_fp*     u:object_r:gx_fpd_device:s0
+/dev/smartpa_f0_detect u:object_r:smartpa_f0_detect_device:s0
+/system/bin/gx_fpd       u:object_r:gx_fpd_exec:s0
+
+# Goodix Fingerprint data
+/data/system/fingerprint(/.*)?    u:object_r:gx_fpd_data_file:s0
+/persist/data/gxfp(/.*)?		  u:object_r:gx_fpd_data_file:s0
+
 /dev/fpc1020                                                    u:object_r:fpc1020_device:s0
 /data/fpc(/.*)?                                                 u:object_r:fpc_data_file:s0
 /data/fpc_images(/.*)?                                          u:object_r:fpc_images_file:s0
