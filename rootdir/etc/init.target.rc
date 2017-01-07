@@ -163,7 +163,8 @@ service fingerprintd /system/bin/fingerprintd
 service gx_fpd /system/bin/gx_fpd
     class late_start
     user system
-    group system
+    group input
+    writepid /dev/cpuset/system-background/tasks
 
 service qfp-boot /system/bin/sh /system/etc/qfp_boot.sh
     class late_start
