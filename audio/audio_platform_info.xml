@@ -36,19 +36,11 @@
         <feature name="NATIVE_AUDIO_44.1" codec_support="1"/>
     </native_configs>
 
-    <!-- <backend_names> -->
-	<!-- <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/> -->
-	<!-- <device name="SND_DEVICE_OUT_ANC_HEADSET" backend="anc-headphones" interface="SLIMBUS_6_RX"/> -->
-	<!-- <device name="SND_DEVICE_OUT_LINE" backend="headphones" interface="SLIMBUS_6_RX"/> -->
-	<!-- <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="speaker-and-headphones" interface="SLIMBUS_0_RX-and-SLIMBUS_6_RX"/> -->
-	<!-- <device name="SND_DEVICE_OUT_SPEAKER_AND_ANC_HEADSET" backend="speaker-and-anc-headphones" interface="SLIMBUS_0_RX-and-SLIMBUS_6_RX"/> -->
-	<!-- <device name="SND_DEVICE_OUT_SPEAKER_AND_LINE" backend="speaker-and-headphones" interface="SLIMBUS_0_RX-and-SLIMBUS_6_RX"/> -->
-	<!-- <device name="SND_DEVICE_OUT_VOICE_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/> -->
-	<!-- <device name="SND_DEVICE_OUT_VOICE_ANC_HEADSET" backend="voice-anc-headphones" interface="SLIMBUS_6_RX"/> -->
-	<!-- <device name="SND_DEVICE_OUT_VOICE_LINE" backend="headphones" interface="SLIMBUS_6_RX"/> -->
-	<!-- <device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/> -->
-	<!-- <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/> -->
-    <!-- </backend_names> -->
+    <backend_names>
+        <device name="SND_DEVICE_OUT_SPEAKER" backend="smartpa" />
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="smartpa" />
+        <device name="SND_DEVICE_OUT_VOLTE_NB_SPEAKER" backend="smartpa" />
+    </backend_names>
 
     <config_params>
         <param key="spkr_1_tz_name" value="wsatz.11"/>
