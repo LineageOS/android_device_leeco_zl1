@@ -171,6 +171,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
+    fingerprint.msm8916 \
     fingerprintd
 
 # For android_filesystem_config.h
