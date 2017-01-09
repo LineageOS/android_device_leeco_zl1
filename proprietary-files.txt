@@ -69,6 +69,7 @@ lib/libarcsoft_nighthawk.so
 lib/libarcsoft_panorama_burstcapture.so
 lib/libarcsoft_smart_denoise.so
 lib/libcamera_letv_algo.so
+lib/libcameraservice.so
 lib/libletv_algo_jni.so
 lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
