@@ -1,20 +1,20 @@
 Copyright 2016 - The CyanogenMod Project
 
-Device configuration for Letv Pro3 (Le X727)
+Device configuration for Letv Pro3 (Le X727 or X720)
 =====================================
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Dual-core 2.15GHz Kryo & dual-core 1.6GHz Kryo
-CHIPSET | Qualcomm MSM8996 Snapdragon 820
+CPU     | Dual-core 2.35GHz Kryo & dual-core 2.0GHz Kryo
+CHIPSET | Qualcomm MSM8996 Snapdragon 821
 GPU     | 624MHz Adreno 530
 Memory  | 4/6 GB
 Shipped Android Version | 6.0
-Storage | 64/128 GB
-Battery | 3100 mAh (non-removable)
-Dimensions | 156.8 x 77.6 x 7.99 mm
-Display | 1440 x 2560 pixels, 5.7" AMOLED
-Rear Camera  | 21.0 MP, LED flash
+Storage | 64 GB
+Battery | 4070 mAh (non-removable)
+Dimensions | 151.4 x 73.9 x 7.5 mm
+Display | 1920 x 1080 pixels, 5.5" LCD
+Rear Camera  | 16.0 MP, LED flash
 Front Camera | 8.0 MP
 Release Date | April 2016
 
