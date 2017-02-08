@@ -1,5 +1,6 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
+   Copyright (c) 2017, The LineageOS Project
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -34,6 +35,8 @@
 #include "property_service.h"
 #include "log.h"
 #include "util.h"
+
+#define DEVINFO_FILE "/dev/block/bootdevice/by-name/devinfo"
 
 static int read_file2(const char *fname, char *data, int max_size)
 {
@@ -90,12 +93,44 @@ void init_alarm_boot_properties()
 void vendor_load_properties() {
     char device[PROP_VALUE_MAX];
     int rc;
+    int isLEX720 = 1;
 
     rc = property_get("ro.cm.device", device);
     if (!rc || strncmp(device, "zl1", PROP_VALUE_MAX))
         return;
 
-    property_set("ro.product.model", "LeEco Le Pro3");
+    if (read_file2(DEVINFO_FILE, device, sizeof(device)))
+    {
+        if (!strncmp(device, "le_zl1_oversea", 14)) {
+            isLEX720 = 0;
+        }
+    }
+
+    if (isLEX720) 
+    {
+        // This is LEX720
+        property_set("ro.product.model", "LEX720");
+        property_set("persist.data.iwlan.enable", "false");
+        // Dual SIM
+        property_set("persist.radio.multisim.config", "dsds");
+        // Disable VoLTE
+        property_set("persist.radio.cs_srv_type", "1");
+        property_set("persist.radio.calls.on.ims", "0");
+        property_set("persist.radio.jbims", "0");
+    } 
+    else 
+    {
+        // This is LEX727
+        property_set("ro.product.model", "LEX727");
+        property_set("persist.data.iwlan.enable", "true");
+        // Single SIM
+        property_set("persist.radio.multisim.config", "NA");
+        // Enable VoLTE
+        property_set("persist.radio.cs_srv_type", "0");
+        property_set("persist.radio.calls.on.ims", "true");
+        property_set("persist.radio.jbims", "true");
+    }
+
     init_alarm_boot_properties();
 }
 
