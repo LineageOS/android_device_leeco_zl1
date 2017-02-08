@@ -19,6 +19,10 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
+         Software implementation will be used if config_hardware_auto_brightness_available is not set -->
+    <bool name="config_automatic_brightness_available">true</bool>
+
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
 
@@ -30,22 +34,24 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>        <!-- pitch black -->
-        <item>5</item>
-        <item>9</item>
-        <item>14</item>
-        <item>25</item>       <!-- twilight -->
-        <item>50</item>       <!-- dim indoor -->
-        <item>100</item>      <!-- home -->
+        <item>2</item>
+        <item>10</item>
+        <item>50</item>
+        <item>90</item>
+        <item>100</item>
+        <item>150</item>
         <item>200</item>
-        <item>300</item>      <!-- office -->
-        <item>500</item>      <!-- sunrise -->
-        <item>750</item>
-        <item>1000</item>     <!-- overcast -->
-        <item>2000</item>
-        <item>5000</item>
-        <item>10000</item>    <!-- daylight -->
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1300</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>8000</item>
         <item>20000</item>
+        <item>30000</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -53,22 +59,24 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>7</item>
-        <item>8</item>
-        <item>10</item>
-        <item>12</item>
-        <item>17</item>
-        <item>29</item>
-        <item>35</item>
-        <item>47</item>
-        <item>75</item>
+        <item>5</item>
+        <item>14</item>
+        <item>23</item>
+        <item>32</item>
+        <item>41</item>
+        <item>50</item>
+        <item>59</item>
+        <item>68</item>
+        <item>77</item>
+        <item>94</item>
         <item>114</item>
         <item>130</item>
-        <item>152</item>
-        <item>175</item>
-        <item>200</item>
-        <item>215</item>
-        <item>235</item>
+        <item>204</item>
+        <item>224</item>
+        <item>240</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
         <item>255</item>
     </integer-array>
 
@@ -301,10 +309,6 @@
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
     <!-- Device specific options -->
-
-    <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
-         Software implementation will be used if config_hardware_auto_brightness_available is not set -->
-    <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
