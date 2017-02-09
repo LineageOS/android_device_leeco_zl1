@@ -1,1 +1,2 @@
 ifaadaemon                           u:object_r:ifaadaemon_service:s0
+goodix.fp                            u:object_r:goodix_service:s0

@@ -2,3 +2,6 @@ allow init vfat:file { read open };
 allow init socket_device:sock_file { create setattr unlink };
 
 domain_trans(init, rootfs, dashd)
+
+allow init debugfs:dir { mounton };
+allow init tee_device:chr_file { rw_file_perms };
