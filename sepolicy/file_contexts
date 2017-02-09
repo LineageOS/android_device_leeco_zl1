@@ -18,3 +18,7 @@
 /dev/dash                                                       u:object_r:input_device:s0
 
 /system/bin/ifaadaemon                                          u:object_r:ifaadaemon_exec:s0
+
+# Fingerprint
+/system/bin/gx_fpd                                              u:object_r:goodix_exec:s0
+/dev/goodix_fp                                                  u:object_r:fingerprint_device:s0
