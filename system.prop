@@ -102,7 +102,7 @@ ro.min_freq_4=307200
 ro.sys.fw.bg_apps_limit=60
 
 # QCOM
-ro.frp.pst=/dev/block/bootdevice/by-name/config
+ro.frp.pst=/dev/block/bootdevice/by-name/letvconfig
 drm.service.enabled=true
 
 # RIL
