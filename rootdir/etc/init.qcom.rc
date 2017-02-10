@@ -29,6 +29,7 @@ import init.qcom.power.rc
 import init.qcom.usb.rc
 
 on early-init
+    mount debugfs debugfs /sys/kernel/debug
     mkdir /firmware 0771 system system
     mkdir /bt_firmware 0771 system system
     symlink /data/tombstones /tombstones
@@ -608,6 +609,17 @@ service audiod /system/bin/audiod
    user system
    group system
 
+service usf_tester /system/bin/usf_tester
+    user system
+    group system inet
+    disabled
+    oneshot
+
+service usf_proximity /system/bin/usf_proximity
+    class late_start
+    user system
+    group system inet audio
+
 service imsqmidaemon /system/bin/imsqmidaemon
     class main
     user system
@@ -695,6 +707,15 @@ on property:init.svc.zygote=running
 on property:init.svc.zygote=restarting
     stop ppd
 
+service fossctl /system/bin/ppd foss:on
+    user system
+    group system graphics
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start fossctl
+
 service tlocd /system/bin/tloc_daemon
     class late_start
     user system
@@ -757,10 +778,8 @@ on property:persist.sys.ssr.enable_ramdumps=0
 
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
-    # Reset the read_ahead_kb to 256
-    write /sys/block/dm-0/queue/read_ahead_kb 256
-    write /sys/block/sda/queue/read_ahead_kb 256
-    write /sys/block/sde/queue/read_ahead_kb 256
+    # Reset the read_ahead_kb to 512
+    write /sys/block/dm-0/queue/read_ahead_kb 512
 
     # CPE fw_name used by sound trigger HAL
     chown media audio /sys/kernel/wcd_cpe0/fw_name
@@ -873,6 +892,12 @@ service hci_filter_root /system/bin/wcnss_filter
     user bluetooth
     group bluetooth qcom_diag system
     disabled
+
+service config_bt_addr /system/bin/btnvtool -O
+    class core
+    user bluetooth
+    group bluetooth radio
+    oneshot
 
 service config_bluetooth /system/bin/sh /system/etc/init.qcom.bt.sh "onboot"
     class core
@@ -1385,11 +1410,25 @@ service iprenew_eth0 /system/bin/dhcpcd -n
     disabled
     oneshot
 
-service ifaadaemon /system/bin/ifaadaemon
+service ifaa_daemon /system/bin/ifaa_daemon
+    class main
+    socket ifaa_daemon stream 666 system system
+
+service yep_qmi_server /system/bin/yep_qmi_server
+    class core
+    user root
+    seclabel u:r:yep_qmi_server:s0
+
+service fidoca /system/vendor/bin/fidoca
     class late_start
     user system
     group system
-    writepid /dev/cpuset/system-background/tasks
+
+service adctl /system/bin/ad_controller --enable-ad
+    user system
+    group system graphics
+    oneshot
+    disabled
 
 # such color
 on property:sys.rainbow.recovery=1
