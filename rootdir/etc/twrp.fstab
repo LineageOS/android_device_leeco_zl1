@@ -12,4 +12,4 @@
 /firmware       vfat      /dev/block/bootdevice/by-name/modem                flags=display="Firmware";mounttodecrypt
 /bt_firmware    vfat      /dev/block/bootdevice/by-name/bluetooth            flags=display="BT Firmware"
 
-/usb-otg        auto      /dev/block/sda1 /dev/block/sda                     flags=display="USB-OTG";storage;wipeingui;removable
+/usbstorage     auto      /dev/block/sdg1 /dev/block/sdg                     flags=display="USB OTG";storage;wipeingui;removable;
