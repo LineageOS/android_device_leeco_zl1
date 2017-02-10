@@ -150,3 +150,6 @@ persist.timed.enable=true
 
 # Wifi
 wifi.interface=wlan0
+
+# SSR
+persist.sys.ssr.restart_level=ALL_ENABLE
