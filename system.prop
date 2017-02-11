@@ -1,3 +1,5 @@
+ro.config.product=le_zl1
+ro.config.le_hardware_version=HW_1.0.0
 ro.display.series=Le Pro3
 
 #system props for the MM modules
@@ -98,7 +100,8 @@ debug.gralloc.enable_fb_ubwc=1
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 ro.opengles.version=196609
-ro.sf.lcd_density=480
+ro.sf.lcd_density=420
+persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 sdm.perf_hint_window=50
 persist.hwc.enable_vds=1
@@ -152,6 +155,20 @@ persist.radio.ignore_dom_time=5
 persist.radio.hw_mbn_update=0
 persist.radio.sw_mbn_update=0
 persist.radio.start_ota_daemon=1
+
+#default SAR mode 0:off/1:on
+persist.sys.sar_mode=1
+
+persist.radio.cs_srv_type=1
+persist.radio.calls.on.ims=0
+persist.radio.jbims=0
+persist.radio.csvt.enabled=false
+persist.radio.rat_on=combine
+persist.radio.mt_sms_ack=20
+persist.radio.ignore_dom_time=5
+persist.radio.force_on_dc=true
+persist.radio.flexmap_type=none
+persist.radio.facnotsup_as_nonw=1
 
 # RmNet Data
 persist.rmnet.data.enable=true
