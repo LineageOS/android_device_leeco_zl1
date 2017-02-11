@@ -1,5 +1,25 @@
 ro.display.series=Le Pro3
 
+#system props for the MM modules
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
+mm.enable.smoothstreaming=true
+#codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DIVX DIVXHD
+mm.enable.qcom_parser=4194303
+persist.mm.enable.prefetch=true
+
+# Additional i/p buffer in case of encoder DCVS
+vidc.enc.dcvs.extra-buff-count=2
+
+# Set default power mode to low power for encoder
+vidc.debug.perf.mode=2
+
 # Audio
 ro.qc.sdk.audio.ssr=false
 persist.audio.ssr.3mic=false
@@ -11,7 +31,7 @@ tunnel.audio.encode=false
 media.aac_51_output_enabled=true
 audio.offload.buffer.size.kb=32
 audio.offload.video=true
-audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.16bit.enable=false
 audio.offload.pcm.24bit.enable=true
 audio.offload.track.enable=false
 audio.deep_buffer.media=true
@@ -26,11 +46,22 @@ audio.offload.passthrough=false
 audio.offload.multiple.enabled=true
 audio.offload.min.duration.secs=30
 af.fast_track_multiplier=1
-audio_hal.period_size=192
+audio_hal.period_size=160
 
 # Bluetooth
 bt.max.hfpclient.connections=1
 qcom.bluetooth.soc=rome
+ro.bluetooth.wipower=true
+ro.bluetooth.emb_wp_mode=true
+bt.max.hfpclient.connections=1
+
+# System property for cabl
+ro.qualcomm.cabl=2
+
+# Property for vendor specific library
+ro.vendor.gt_library=libqti-gt.so
+ro.vendor.at_library=libqti-at.so
+sys.games.gt.prof=1
 
 # Camera
 persist.camera.imglib.fddsp=1
@@ -54,28 +85,10 @@ persist.data.netmgrd.qos.enable=true
 persist.data.mode=concurrent
 
 # Fingerprint
-persist.qfp=true
-persist.qfp.fd_enabled=1
-persist.qfp.ssc_enable_island=1
-persist.qfp.ssc_fgoff_dil_s1=10
-persist.qfp.ssc_fgoff_dil_home=10
-persist.qfp.finger_evt_enabled=1
-
-persist.qfp.ssc_thresh_s1=0.570
-persist.qfp.ssc_thresh_s1_off=0.0
-persist.qfp.ssc_thresh_s1_rub=0.0
-persist.qfp.ssc_thresh_s2=0.430
-persist.qfp.ssc_thresh_s2_off=0.0
-persist.qfp.ssc_thresh_s2_touch=0.350
-persist.qfp.ssc_thresh_s2_lift=0.330
-
-persist.qfp.filter_movefinger=0
-persist.qfp.filter_holdfinger=50000
-persist.qfp.filter_insuffcov=6000
+persist.qfp=false
 
 # GPS
-persist.gps.qc_nlp_in_use=1
-persist.loc.nlp_name=com.qualcomm.location
+persist.gps.qc_nlp_in_use=0
 ro.gps.agps_provider=1
 
 # Graphics
@@ -90,6 +103,12 @@ persist.sys.wfd.virtual=0
 sdm.perf_hint_window=50
 persist.hwc.enable_vds=1
 sdm.debug.disable_rotator_split=1
+ro.persist.qcapb = 1
+
+#enable Apical AD
+ro.qcom.ad=1
+ro.qcom.ad.calib.data=/system/etc/ad_calib_le_zl1.cfg
+ro.qcom.ad.sensortype=3
 
 # NFC
 ro.nfc.port=I2C
