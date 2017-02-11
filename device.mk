@@ -23,8 +23,15 @@
 
 $(call inherit-product-if-exists, vendor/leeco/zl1/zl1-vendor.mk)
 
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/leeco/zl1/rootdir/root,root)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -167,12 +174,11 @@ PRODUCT_PACKAGES += \
 
 # Doze mode
 PRODUCT_PACKAGES += \
-    OneplusDoze
+    Doze
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
-    fingerprintd \
-    OneplusPocketMode
+    fingerprintd
 
 # Gello
 PRODUCT_PACKAGES += \
@@ -249,6 +255,7 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
+    libmm-omxcore \
     libc2dcolorconvert \
     libextmedia_jni \
     libOmxAacEnc \
@@ -268,25 +275,24 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.qcom.bt.sh \
-    init.qcom.power.rc \
-    init.qcom.rc \
-    init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    ueventd.qcom.rc
-
 # RIL
 PRODUCT_PACKAGES += \
     librmnetctl \
-    libxml2
+    rmnetcli \
+    libxml2 \
+    libprotobuf-cpp-full
 
 # stlport required for Camera blobs
 PRODUCT_PACKAGES += \
     libstlport
+
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.msm8996
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/sensors/hals.conf:system/etc/sensors/hals.conf \
+    $(LOCAL_PATH)/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf
 
 # Wifi
 PRODUCT_PACKAGES += \
@@ -299,7 +305,8 @@ PRODUCT_PACKAGES += \
     hostapd \
     dhcpcd.conf \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    hs20-osu-client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
@@ -320,3 +327,7 @@ ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 endif
+
+# Model is set via init library
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
+    ro.product.model
