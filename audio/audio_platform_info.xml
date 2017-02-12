@@ -36,20 +36,29 @@
         <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" acdb_id="16" />
         <device name="SND_DEVICE_IN_HEADSET_MIC" acdb_id="8" />
     </acdb_ids>
+
     <bit_width_configs>
         <device name="SND_DEVICE_OUT_SPEAKER" bit_width="24"/>
     </bit_width_configs>
+
     <native_configs>
         <feature name="NATIVE_AUDIO_44.1" codec_support="1"/>
     </native_configs>
 
     <backend_names>
         <device name="SND_DEVICE_OUT_SPEAKER" backend="smartpa" />
-        <device name="SND_DEVICE_OUT_HANDSET" backend="smartpa" />
-        <device name="SND_DEVICE_OUT_VOICE_HANDSET" backend="smartpa" />
+        <device name="SND_DEVICE_OUT_HANDSET" backend="smartpa-handset" />
+        <device name="SND_DEVICE_OUT_VOICE_HANDSET" backend="smartpa-handset" />
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="smartpa" />
         <device name="SND_DEVICE_OUT_VOLTE_NB_SPEAKER" backend="smartpa" />
     </backend_names>
+
+    <device_names>
+        <!-- Output devices -->
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" alias="voice-speaker-stereo" />
+        <!-- Input devices -->
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" alias="voice-speaker-stereo-mic" />
+    </device_names>
 
     <config_params>
         <param key="spkr_1_tz_name" value="wsatz.11"/>
