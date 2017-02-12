@@ -712,6 +712,7 @@ service fossctl /system/bin/ppd foss:on
     group system graphics
     oneshot
     disabled
+    seclabel u:r:fossctl:s0
 
 on property:sys.boot_completed=1
     start fossctl
@@ -1413,6 +1414,7 @@ service iprenew_eth0 /system/bin/dhcpcd -n
 service ifaa_daemon /system/bin/ifaa_daemon
     class main
     socket ifaa_daemon stream 666 system system
+    seclabel u:r:ifaa_daemon:s0
 
 service yep_qmi_server /system/bin/yep_qmi_server
     class core
@@ -1423,6 +1425,7 @@ service fidoca /system/vendor/bin/fidoca
     class late_start
     user system
     group system
+    seclabel u:r:fidoca:s0
 
 service adctl /system/bin/ad_controller --enable-ad
     user system
