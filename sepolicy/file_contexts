@@ -26,3 +26,5 @@
 /system/vendor/bin/fidoca                                       u:object_r:fidoca_exec:s0
 
 /system/bin/ppd                                                 u:object_r:fossctl_exec:s0
+
+/system/bin/yep_qmi_server                                      u:object_r:yep_qmi_server_exec:s0
