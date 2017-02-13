@@ -1409,9 +1409,9 @@ service ifaa_daemon /system/bin/ifaa_daemon
     class main
     socket ifaa_daemon stream 666 system system
 
-service yep_qmi_server /system/bin/yep_qmi_server
-    class core
-    user root
+#service yep_qmi_server /system/bin/yep_qmi_server
+#    class core
+#    user root
 
 service fidoca /system/vendor/bin/fidoca
     class late_start
