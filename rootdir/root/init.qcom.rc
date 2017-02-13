@@ -528,15 +528,15 @@ service fingerprintd /system/bin/fingerprintd
     group system
     writepid /dev/cpuset/system-background/tasks
 
-service qfp-daemon /system/bin/qfp-daemon
-    class late_start
-    user system
-    group system drmrpc diag input
+#service qfp-daemon /system/bin/qfp-daemon
+#    class late_start
+#    user system
+#    group system drmrpc diag input
 
-service qvop-daemon /system/bin/qvop-daemon
-    class late_start
-    user system
-    group system drmrpc
+#service qvop-daemon /system/bin/qvop-daemon
+#    class late_start
+#    user system
+#    group system drmrpc
 
 # start up peripheral manager
 service per_mgr /system/bin/pm-service
@@ -748,10 +748,10 @@ service iop /system/bin/iop
     socket iop seqpacket 0666 root system
     writepid /dev/cpuset/system-background/tasks
 
-service qcomsysd /system/bin/qcom-system-daemon
-    class main
-    user root
-    group root qcom_diag
+#service qcomsysd /system/bin/qcom-system-daemon
+#    class main
+#    user root
+#    group root qcom_diag
 
 service ssr_setup /system/bin/ssr_setup
     oneshot
@@ -956,11 +956,11 @@ service bridgemgrd /system/bin/bridgemgrd
     group radio qcom_diag
     disabled
 
-service port-bridge /system/bin/port-bridge
-    class main
-    user radio system
-    group radio system inet
-    oneshot
+#service port-bridge /system/bin/port-bridge
+#    class main
+#    user radio system
+#    group radio system inet
+#    oneshot
 
 service qmiproxy /system/bin/qmiproxy
     class main
@@ -1116,11 +1116,11 @@ service iprenew_p2p /system/bin/dhcpcd -n
     disabled
     oneshot
 
-service ptt_socket_app /system/bin/ptt_socket_app -d
-    class main
-    user root
-    group root
-    oneshot
+#service ptt_socket_app /system/bin/ptt_socket_app -d
+#    class main
+#    user root
+#    group root
+#    oneshot
 
 service ptt_ffbm /system/bin/ptt_socket_app -f -d
     user root
@@ -1355,12 +1355,12 @@ service msm_irqbalance /system/bin/msm_irqbalance -f /system/vendor/etc/msm_irqb
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-service wfdservice /system/bin/wfdservice
-    class main
-    user system
-    group audio camera inet net_bt_stack drmrpc media_rw media input net_admin
-    # removed these because of limit of 12 groups
-    #graphics net_bt net_bt_admin bluetooth
+#service wfdservice /system/bin/wfdservice
+#    class main
+#    user system
+#    group audio camera inet net_bt_stack drmrpc media_rw media input net_admin
+#    # removed these because of limit of 12 groups
+#    #graphics net_bt net_bt_admin bluetooth
 
 # Coresight early boot service
 service cs-early-boot /system/bin/sh /persist/coresight/qdss.agent.sh early-boot /system/etc/init.qcom.debug.sh
@@ -1409,9 +1409,9 @@ service ifaa_daemon /system/bin/ifaa_daemon
     class main
     socket ifaa_daemon stream 666 system system
 
-service yep_qmi_server /system/bin/yep_qmi_server
-    class core
-    user root
+#service yep_qmi_server /system/bin/yep_qmi_server
+#    class core
+#    user root
 
 service fidoca /system/vendor/bin/fidoca
     class late_start
