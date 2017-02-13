@@ -1380,9 +1380,8 @@
       <ctl name="MultiMedia5 Mixer SLIM_0_TX" value="1" />
     </path>
 
-    <!--krayche.yang edit it for skype bt call 160624-->
     <path name="low-latency-record bt-sco">
-        <ctl name="MultiMedia5 Mixer AUX_PCM_UL_TX" value="1" />
+      <ctl name="MultiMedia5 Mixer AUX_PCM_UL_TX" value="1" />
     </path>
 
     <path name="low-latency-record bt-sco-wb">
@@ -1395,7 +1394,7 @@
     </path>
 
     <path name="low-latency-record capture-fm">
-        <ctl name="MultiMedia5 Mixer TERT_MI2S_TX" value="1" />
+      <ctl name="MultiMedia5 Mixer TERT_MI2S_TX" value="1" />
     </path>
 
     <path name="fm-virtual-record capture-fm">
