@@ -75,12 +75,10 @@ on boot
     write /sys/devices/soc/75ba000.i2c/i2c-12/12-0020/input/input0/update_fw 1
 
     # Torch
-    chown system system /sys/class/leds/led:torch_0/brightness
-    chmod 666 /sys/class/leds/led:torch_0/brightness
-    chown system system /sys/class/leds/led:torch_1/brightness
-    chmod 666 /sys/class/leds/led:torch_1/brightness
-    chown system system /sys/class/leds/led:switch/brightness
-    chmod 666 /sys/class/leds/led:switch/brightness
+    chown system system /sys/class/leds/torch-light0/brightness
+    chown system system /sys/class/leds/torch-light1/brightness
+    chmod 0666 /sys/class/leds/torch-light0/brightness
+    chmod 0666 /sys/class/leds/torch-light1/brightness
 
     # Touchscreen
     chown system radio /proc/touchpanel/double_tap_enable
