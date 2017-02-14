@@ -81,33 +81,7 @@ on boot
     chmod 0666 /sys/class/leds/torch-light1/brightness
 
     # Touchscreen
-    chown system radio /proc/touchpanel/double_tap_enable
-    chmod 0660 /proc/touchpanel/double_tap_enable
-
-    chown root system /proc/touchpanel/camera_enable
-    chmod 0660 /proc/touchpanel/camera_enable
-
-    chown root system /proc/touchpanel/music_enable
-    chmod 0660 /proc/touchpanel/music_enable
-
-    chown root system /proc/touchpanel/flashlight_enable
-    chmod 0660 /proc/touchpanel/flashlight_enable
-
-    # Buttons
-    chown root system /proc/s1302/key_rep
-    chmod 0660 /proc/s1302/key_rep
-
-    chown root system /proc/s1302/virtual_key
-    chmod 0660 /proc/s1302/virtual_key
-
-    chown root system /proc/tri-state-key/keyCode_top
-    chmod 0660 /proc/tri-state-key/keyCode_top
-
-    chown root system /proc/tri-state-key/keyCode_middle
-    chmod 0660 /proc/tri-state-key/keyCode_middle
-
-    chown root system /proc/tri-state-key/keyCode_bottom
-    chmod 0660 /proc/tri-state-key/keyCode_bottom
+    chown system system /proc/touchpanel/capacitive_keys_enable
 
     # Graphics
     #create symlink for fb1 as HDMI
