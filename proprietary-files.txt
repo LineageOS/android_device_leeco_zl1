@@ -17,6 +17,18 @@ etc/acdbdata/MTP/letv/workspaceFile.qwsp
 etc/drc/drc_cfg_AZ.txt
 etc/dts/dts-m6m8-lic.key
 
+# Bluetooth
+etc/firmware/nvm_tlv.bin
+etc/firmware/nvm_tlv_1.3.bin
+etc/firmware/nvm_tlv_2.1.bin
+etc/firmware/nvm_tlv_3.0.bin
+etc/firmware/nvm_tlv_3.2.bin
+etc/firmware/rampatch_tlv.img
+etc/firmware/rampatch_tlv_1.3.tlv
+etc/firmware/rampatch_tlv_2.1.tlv
+etc/firmware/rampatch_tlv_3.0.tlv
+etc/firmware/rampatch_tlv_3.2.tlv
+
 # Camera
 bin/mm-qcamera-daemon
 etc/camera/imx298_chromatix.xml
@@ -431,12 +443,6 @@ etc/firmware/modem_pr/mcfg_sw_reliance.mbn
 etc/firmware/modem_pr/mcfg_sw_sprint.mbn
 etc/firmware/modem_pr/mcfg_sw_tmo.mbn
 etc/firmware/modem_pr/mcfg_sw_verizon.mbn
-
-# Sensors
-lib/libsensorservice.so
-lib64/libsensorservice.so
-lib/hw/sensors.msm8996.so
-lib64/hw/sensors.msm8996.so
 
 # Signed graphics firmware
 etc/firmware/a530_gpmu.fw2
