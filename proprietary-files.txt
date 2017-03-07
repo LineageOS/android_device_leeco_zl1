@@ -434,6 +434,7 @@ lib64/hw/fingerprint.msm8996.so
 vendor/firmware/libpn548ad_fw.so
 
 # Radio - MBN
+etc/firmware/modem_pr/mbn_upgrade_info
 etc/firmware/modem_pr/mcfg_sw_att.mbn
 etc/firmware/modem_pr/mcfg_sw_cmcc.mbn
 etc/firmware/modem_pr/mcfg_sw_ct.mbn
