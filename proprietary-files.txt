@@ -464,8 +464,6 @@ bin/ATFWD-daemon
 bin/ftmdaemon
 bin/ifaa_daemon
 bin/ks
-bin/mbn_daemon
-bin/mbn_daemon_test
 bin/ppd
 bin/ssr_diag
 bin/ssr_setup
