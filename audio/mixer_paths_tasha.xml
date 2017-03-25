@@ -534,7 +534,7 @@
     <ctl name="Boost Output Voltage" value="6.5V" />
     <ctl name="Left Feedback Enable" value="ON" />
     <ctl name="Right Feedback Enable" value="ON" />
-    <ctl name="Speaker Volume" value="1" />
+    <ctl name="Speaker Volume" value="2" />
     <ctl name="Digital Gain" value="40" />
     <!--MAX98927 Smart PA end-->
 

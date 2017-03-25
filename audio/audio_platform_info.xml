@@ -26,10 +26,13 @@
 <!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                          -->
 <audio_platform_info>
     <acdb_ids>
+        <!-- Output devices -->
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" acdb_id="220" /> <!-- SND_DEVICE_OUT_VOICE_SPEAKER_STEREO -->
         <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED" acdb_id="72" />
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" acdb_id="57"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" acdb_id="45"/>
+        
+        <!-- Input devices -->
         <device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="34"/> <!-- SND_DEVICE_IN_HANDSET_MIC_NS -->
         <device name="SND_DEVICE_IN_SPEAKER_MIC" acdb_id="109"/>
         <device name="SND_DEVICE_IN_HEADSET_MIC" acdb_id="115"/>
@@ -74,14 +77,14 @@
 
     <device_names>
         <!-- Output devices -->
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" alias="voice-speaker-stereo-nb" />
         <!-- Input devices -->
-        <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" alias="voice-speaker-dmic-ef" />
     </device_names>
 
     <config_params>
         <param key="spkr_1_tz_name" value="wsatz.11"/>
         <param key="spkr_2_tz_name" value="wsatz.12"/>
+        <param key="native_audio_mode" value="src"/>
+        <param key="input_mic_max_count" value="4"/>
         <!-- In the below value string, first parameter indicates size -->
         <!-- followed by perf lock options                             -->
         <param key="perf_lock_opts" value="4, 0x101, 0x704, 0x20F, 0x1E01"/>
