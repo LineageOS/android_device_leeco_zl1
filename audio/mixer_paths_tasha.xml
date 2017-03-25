@@ -718,16 +718,8 @@
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia3" value="1" />
     </path>
 
-    <path name="audio-ull-playback smartpa">
-        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia3" value="1" />
-    </path>
-
-    <path name="audio-ull-playback smartpa-handset">
-        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia3" value="1" />
-    </path>
-
     <path name="audio-ull-playback speaker-protected">
-        <path name="audio-ull-playback smartpa" />
+        <path name="audio-ull-playback" />
     </path>
 
     <path name="audio-ull-playback headphones">
@@ -769,6 +761,14 @@
 
     <path name="audio-ull-playback afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia3" value="1" />
+    </path>
+
+    <path name="audio-ull-playback smartpa">
+        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia3" value="1" />
+    </path>
+
+    <path name="audio-ull-playback smartpa-handset">
+        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia3" value="1" />
     </path>
 
     <path name="multi-channel-playback hdmi">
