@@ -13,7 +13,6 @@ etc/acdbdata/MTP/letv/MTP_Handset_cal.acdb
 etc/acdbdata/MTP/letv/MTP_Hdmi_cal.acdb
 etc/acdbdata/MTP/letv/MTP_Headset_cal.acdb
 etc/acdbdata/MTP/letv/MTP_Speaker_cal.acdb
-etc/acdbdata/MTP/letv/workspaceFile.qwsp
 etc/drc/drc_cfg_AZ.txt
 etc/dts/dts-m6m8-lic.key
 
