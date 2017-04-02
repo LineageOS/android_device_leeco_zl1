@@ -6,13 +6,6 @@ etc/acdbdata/MTP/MTP_Handset_cal.acdb
 etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 etc/acdbdata/MTP/MTP_Headset_cal.acdb
 etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Bluetooth_cal.acdb
-etc/acdbdata/MTP/letv/MTP_General_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Global_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Handset_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Hdmi_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Headset_cal.acdb
-etc/acdbdata/MTP/letv/MTP_Speaker_cal.acdb
 etc/drc/drc_cfg_AZ.txt
 etc/dts/dts-m6m8-lic.key
 
