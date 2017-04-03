@@ -138,7 +138,7 @@
 
     <device_names>
         <!-- Output devices -->
-        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" alias="voice-speaker-stereo-nb" />
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" alias="voice-speaker-stereo-brightness" />
         <!-- Input devices -->
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" alias="voice-speaker-dmic-ef" />
     </device_names>
