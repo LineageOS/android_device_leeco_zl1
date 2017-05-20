@@ -120,10 +120,6 @@
         <device name="SND_DEVICE_OUT_SPEAKER" bit_width="24"/>
     </bit_width_configs>
 
-    <native_configs>
-        <feature name="NATIVE_AUDIO_44.1" codec_support="1"/>
-    </native_configs>
-
     <backend_names>
         <device name="SND_DEVICE_OUT_SPEAKER" backend="smartpa" />
         <device name="SND_DEVICE_OUT_HANDSET" backend="smartpa-handset" />
@@ -149,6 +145,7 @@
     <config_params>
         <param key="spkr_1_tz_name" value="wsatz.11"/>
         <param key="spkr_2_tz_name" value="wsatz.12"/>
+        <param key="audio.nat.codec.enabled" value="false"/>
         <param key="native_audio_mode" value="src"/>
         <param key="input_mic_max_count" value="4"/>
         <!-- In the below value string, first parameter indicates size -->
