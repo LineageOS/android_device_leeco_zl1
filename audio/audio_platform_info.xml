@@ -85,11 +85,13 @@
         <device name="SND_DEVICE_IN_HEADSET_MIC" acdb_id="115"/>
         <device name="SND_DEVICE_IN_HEADSET_MIC_FLUENCE" acdb_id="117"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" acdb_id="8"/>
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_STEREO_MIC" acdb_id="8"/>
         <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" acdb_id="47"/>
         <device name="SND_DEVICE_IN_HDMI_MIC" acdb_id="8"/>
         <device name="SND_DEVICE_IN_BT_SCO_MIC_WB" acdb_id="4"/>
         <device name="SND_DEVICE_IN_BT_SCO_MIC_WB_NREC" acdb_id="122"/>
         <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="21"/>
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" acdb_id="38"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_QMIC" acdb_id="52"/>
         <device name="SND_DEVICE_IN_VOICE_TTY_FULL_HEADSET_MIC" acdb_id="41"/>
         <device name="SND_DEVICE_IN_VOICE_TTY_VCO_HANDSET_MIC" acdb_id="43"/>
