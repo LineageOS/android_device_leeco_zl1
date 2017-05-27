@@ -37,6 +37,9 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 
 TARGET_KERNEL_CONFIG := lineage_zl1_defconfig
 
+# Recovery/Offmode Charging
+BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
