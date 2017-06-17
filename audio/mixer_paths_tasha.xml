@@ -2346,7 +2346,13 @@
     </path>
 
     <path name="voice-speaker-stereo">
-        <path name="speaker-stereo" />
+        <ctl name="Boost Output Voltage" value="9V" />
+        <ctl name="Left Feedback Enable" value="ON" />
+        <ctl name="Right Feedback Enable" value="ON" />
+        <ctl name="Speaker Volume" value="5" />
+        <ctl name="Digital Gain" value="73" />
+        <ctl name="Left Channel Enable" value="1" />
+        <ctl name="Right Channel Enable" value="1" />
     </path>
 
     <path name="voice-speaker-stereo-nb">
