@@ -24,7 +24,7 @@
 # inherit from msm8996-common
 -include device/leeco/msm8996-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := le_zl0,zl0,le_zl1,zl1,lepro3
+TARGET_OTA_ASSERT_DEVICE := le_zl0,zl0,le_zl1,zl1,lepro3,lex720,lex727,LEX720,LEX727,LEX722,lex722
 
 DEVICE_PATH := device/leeco/zl1
 
