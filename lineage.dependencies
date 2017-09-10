@@ -2,17 +2,5 @@
  {
    "repository": "android_device_leeco_msm8996-common",
    "target_path": "device/leeco/msm8996-common"
- },
- {
-   "repository": "android_vendor_nxp-nfc_opensource_frameworks",
-   "target_path": "vendor/nxp-nfc/opensource/frameworks"
- },
- {
-   "repository": "android_vendor_nxp-nfc_opensource_libnfc-nci",
-   "target_path": "vendor/nxp-nfc/opensource/libnfc-nci"
- },
- {
-   "repository": "android_vendor_nxp-nfc_opensource_Nfc",
-   "target_path": "vendor/nxp-nfc/opensource/Nfc"
  }
 ]
