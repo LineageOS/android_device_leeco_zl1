@@ -419,7 +419,7 @@ lib64/hw/gxfingerprint5118m.default.so
 lib64/libfp_client5118m.so
 lib64/libfpnav5118m.so
 lib64/libfpservice5118m.so
-lib64/hw/fingerprint.msm8996.so
+lib64/hw/fingerprint.msm8996.so:lib64/hw/fingerprint.vendor.msm8996.so
 
 # NFC firmware
 vendor/firmware/libpn548ad_fw.so
