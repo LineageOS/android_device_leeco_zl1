@@ -1,0 +1,3 @@
+allow servicemanager goodix:dir { search };
+allow servicemanager goodix:file { r_file_perms };
+allow servicemanager goodix:process { getattr };
