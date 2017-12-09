@@ -1,3 +1,0 @@
-ifaa_daemon                           u:object_r:ifaa_daemon_service:s0
-goodix.fp                             u:object_r:goodix_service:s0
-android.vendor.fido.IFidoDaemon       u:object_r:fidoca_service:s0

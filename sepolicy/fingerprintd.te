@@ -1,9 +1,0 @@
-r_dir_file(fingerprintd, firmware_file)
-r_dir_file(fingerprintd, proc_touchpanel)
-allow fingerprintd sysfs:file write;
-allow fingerprintd vfat:file r_file_perms;
-
-allow fingerprintd goodix_service:service_manager { find };
-
-allow fingerprintd servicemanager:binder { call transfer };
-allow fingerprintd goodix:binder { call transfer };
