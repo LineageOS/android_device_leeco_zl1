@@ -1,0 +1,4 @@
+# Fingerprint
+/system/bin/gx_fpd                                              u:object_r:goodix_exec:s0
+/dev/goodix_fp                                                  u:object_r:goodix_device:s0
+/data/goodix(/.*)?                                              u:object_r:goodix_data_file:s0
