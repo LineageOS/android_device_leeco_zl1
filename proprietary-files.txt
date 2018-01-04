@@ -475,7 +475,6 @@ vendor/firmware/zl0/a530_zap.mdt
 
 bin/ATFWD-daemon
 bin/ftmdaemon
-bin/ifaa_daemon
 bin/ks
 bin/ppd
 bin/ssr_diag
@@ -523,7 +522,6 @@ etc/usf/proximity/cfg_mtp/usf_ranging_apps_mtp.cfg
 etc/usf/proximity/cfg_mtp/usf_ranging_mtp_algo_transparent_data.bin
 etc/usf/readme.txt
 etc/usf/version.txt
-vendor/bin/fidoca
 vendor/bin/mdtpd
 vendor/bin/mm-pp-daemon
 vendor/lib/libmdtp.so
