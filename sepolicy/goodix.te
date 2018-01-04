@@ -18,4 +18,4 @@ allow goodix goodix_service:service_manager { add };
 allow goodix permission_service:service_manager { find };
 
 allow goodix servicemanager:binder { call transfer };
-allow goodix fingerprintd:binder { call transfer };
+allow goodix hal_fingerprint_default:binder { call transfer };
