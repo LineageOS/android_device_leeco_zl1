@@ -475,16 +475,11 @@ vendor/firmware/zl0/a530_zap.mdt
 
 bin/ATFWD-daemon
 bin/ftmdaemon
-bin/ifaa_daemon
 bin/ks
 bin/ppd
 bin/ssr_diag
 bin/ssr_setup
-bin/tbaseLoader
 bin/tloc_daemon
-bin/usf_proximity
-bin/usf_tester
-bin/yep_qmi_server
 etc/ad_calib.cfg
 etc/ad_calib_le_zl1.cfg
 etc/firmware/Signedrompatch_v20.bin
@@ -523,7 +518,6 @@ etc/usf/proximity/cfg_mtp/usf_ranging_apps_mtp.cfg
 etc/usf/proximity/cfg_mtp/usf_ranging_mtp_algo_transparent_data.bin
 etc/usf/readme.txt
 etc/usf/version.txt
-vendor/bin/fidoca
 vendor/bin/mdtpd
 vendor/bin/mm-pp-daemon
 vendor/lib/libmdtp.so
