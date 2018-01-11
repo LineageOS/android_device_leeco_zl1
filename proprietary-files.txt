@@ -32,7 +32,6 @@ etc/camera/ov8865_chromatix.xml
 etc/camera/ov8865_ofilm_chromatix.xml
 etc/camera/ov8865_ofilm_plus_chromatix.xml
 etc/camera/ov8865_sunny_chromatix.xml
-lib/hw/camera.msm8996.so:lib/hw/camera.vendor.msm8996.so
 lib/libLetvCameraImageSDK.so
 lib/libamipengine.so
 lib/libarcsoft_antishaking.so
@@ -48,13 +47,10 @@ lib/libarcsoft_smart_denoise.so
 lib/libcamera_letv_algo.so
 lib/libletv_algo_jni.so
 lib/libmm-qcamera.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
 lib/libmpbase.so
 lib/libmpkernel.so
 lib/libmpstream.so
 lib/libmputility.so
-lib/libqomx_core.so
 lib/libqrDec.so
 lib/libzeusisCameraAlgoSceneDetection.so
 vendor/lib/libflash_pmic.so
