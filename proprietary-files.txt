@@ -157,12 +157,21 @@ vendor/lib/libmmqjpegdma.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
+vendor/lib/libSonyIMX230_lg_PdafLibrary.so
+vendor/lib/libSonyIMX230_sunny_PdafLibrary.so
+vendor/lib/libSonyIMX298_ofilm_ak_PdafLibrary.so
+vendor/lib/libSonyIMX298_ofilm_PdafLibrary.so
 vendor/lib/libSonyIMX298PdafLibrary.so
+vendor/lib/libSonyIMX298_truly_ak_PdafLibrary.so
 
 # Camera actuators
+vendor/lib/libactuator_ak7371.so
+vendor/lib/libactuator_bu63165.so
+vendor/lib/libactuator_bu64297.so
 vendor/lib/libactuator_dw9714.so
 vendor/lib/libactuator_dw9800w.so
 vendor/lib/libactuator_lc898122.so
+vendor/lib/libactuator_lc898212xd.so
 
 # Camera chromatix
 vendor/lib/libchromatix_ov8865_common.so
