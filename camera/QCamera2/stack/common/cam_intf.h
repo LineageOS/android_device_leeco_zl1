@@ -756,7 +756,7 @@ typedef struct {
     INCLUDE(CAM_INTF_META_FACE_DETECTION,               cam_face_detection_data_t,      1);
     INCLUDE(CAM_INTF_META_FACE_RECOG,                   cam_face_recog_data_t,          1);
     INCLUDE(CAM_INTF_META_FACE_BLINK,                   cam_face_blink_data_t,          1);
-    volatile char leeco_reserved_1[2];
+    INCLUDE(LEECO_RESERVED_PARAM_3,                     char,                           2);
     INCLUDE(CAM_INTF_META_FACE_GAZE,                    cam_face_gaze_data_t,           1);
     INCLUDE(CAM_INTF_META_FACE_SMILE,                   cam_face_smile_data_t,          1);
     INCLUDE(CAM_INTF_META_FACE_LANDMARK,                cam_face_landmarks_data_t,      1);
@@ -965,7 +965,7 @@ typedef struct {
     INCLUDE(CAM_INTF_PARM_CAC,                          cam_aberration_mode_t,       1);
     INCLUDE(CAM_INTF_META_NEUTRAL_COL_POINT,            cam_neutral_col_point_t,     1);
     INCLUDE(CAM_INTF_PARM_ROTATION,                     cam_rotation_info_t,         1);
-    //INCLUDE(CAM_INTF_PARM_HW_DATA_OVERWRITE,            cam_hw_data_overwrite_t,     1);
+    INCLUDE(CAM_INTF_PARM_HW_DATA_OVERWRITE,            cam_hw_data_overwrite_t,     1);
     INCLUDE(CAM_INTF_META_IMGLIB,                       cam_intf_meta_imglib_t,      1);
     INCLUDE(CAM_INTF_PARM_CAPTURE_FRAME_CONFIG,         cam_capture_frame_config_t,  1);
     INCLUDE(CAM_INTF_PARM_CUSTOM,                       custom_parm_buffer_t,        1);
