@@ -564,6 +564,8 @@ int QCamera2Factory::setTorchMode(const char* camera_id, bool on)
     int cameraIdInt(-1);
     char* endPointer = NULL;
     errno = 0;
+    LOGD("E");
+
     QCameraFlash& flash = QCameraFlash::getInstance();
 
     cameraIdLong = strtol(camera_id, &endPointer, 10);
@@ -606,6 +608,7 @@ int QCamera2Factory::setTorchMode(const char* camera_id, bool on)
         }
     }
 
+    LOGD("X, retVal = %d", retVal);
     return retVal;
 }
 
