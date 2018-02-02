@@ -90,7 +90,7 @@
         <device name="SND_DEVICE_IN_HDMI_MIC" acdb_id="8"/>
         <device name="SND_DEVICE_IN_BT_SCO_MIC_WB" acdb_id="4"/>
         <device name="SND_DEVICE_IN_BT_SCO_MIC_WB_NREC" acdb_id="122"/>
-        <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="21"/>
+        <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="40"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" acdb_id="38"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_QMIC" acdb_id="52"/>
         <device name="SND_DEVICE_IN_VOICE_TTY_FULL_HEADSET_MIC" acdb_id="41"/>
@@ -155,4 +155,3 @@
         <param key="perf_lock_opts" value="2, 0x101, 0x20F"/>
     </config_params>
 </audio_platform_info>
-

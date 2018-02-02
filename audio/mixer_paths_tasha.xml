@@ -2350,7 +2350,7 @@
         <ctl name="Left Feedback Enable" value="ON" />
         <ctl name="Right Feedback Enable" value="ON" />
         <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="73" />
+        <ctl name="Digital Gain" value="63" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="1" />
     </path>
