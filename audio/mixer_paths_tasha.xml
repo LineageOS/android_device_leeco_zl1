@@ -2024,8 +2024,8 @@
         <ctl name="Boost Output Voltage" value="9V" />
         <ctl name="Left Feedback Enable" value="ON" />
         <ctl name="Right Feedback Enable" value="ON" />
-        <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="56" />
+        <ctl name="Speaker Volume" value="4" />
+        <ctl name="Digital Gain" value="40" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="1" />
     </path>
@@ -2033,8 +2033,8 @@
     <path name="speaker-mono">
         <ctl name="Boost Output Voltage" value="9V" />
         <ctl name="Right Feedback Enable" value="ON" />
-        <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="56" />
+        <ctl name="Speaker Volume" value="4" />
+        <ctl name="Digital Gain" value="53" />
         <ctl name="Left Channel Enable" value="0" />
         <ctl name="Right Channel Enable" value="1" />
     </path>
@@ -2043,8 +2043,8 @@
         <ctl name="Boost Output Voltage" value="9V" />
         <ctl name="Left Feedback Enable" value="ON" />
         <ctl name="Right Feedback Enable" value="ON" />
-        <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="56" />
+        <ctl name="Speaker Volume" value="4" />
+        <ctl name="Digital Gain" value="50" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="1" />
     </path>
@@ -2148,15 +2148,15 @@
         <ctl name="Boost Output Voltage" value="6.5V" />
         <ctl name="Left Feedback Enable" value="OFF" />
         <ctl name="Right Feedback Enable" value="OFF" />
-        <ctl name="Speaker Volume" value="2" />
-        <ctl name="Digital Gain" value="40" />
+        <ctl name="Speaker Volume" value="1" />
+        <ctl name="Digital Gain" value="50" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="0" />
     </path>
 
     <path name="handset-mic">
         <path name="adc1" />
-        <ctl name="ADC1 Volume" value="16" />
+        <ctl name="ADC1 Volume" value="12" />
     </path>
 
     <path name="handset-mic-db">
@@ -2194,7 +2194,7 @@
         <ctl name="Left Feedback Enable" value="OFF" />
         <ctl name="Right Feedback Enable" value="OFF" />
         <ctl name="Speaker Volume" value="1" />
-        <ctl name="Digital Gain" value="40" />
+        <ctl name="Digital Gain" value="50" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="0" />
     </path>
@@ -2264,14 +2264,14 @@
         <ctl name="Left Feedback Enable" value="ON" />
         <ctl name="Right Feedback Enable" value="ON" />
         <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="63" />
+        <ctl name="Digital Gain" value="55" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="1" />
     </path>
 
     <path name="voice-speaker-mic">
         <path name="speaker-mic" />
-        <ctl name="ADC4 Volume" value="10" />
+        <ctl name="ADC4 Volume" value="28" />
     </path>
 
     <path name="voice-speaker-stereo-mic">
@@ -2536,8 +2536,8 @@
 
     <path name="handset-stereo-dmic-ef">
         <path name="speaker-dmic-endfire" />
-        <ctl name="ADC1 Volume" value="12" />
-        <ctl name="ADC4 Volume" value="12" />
+        <ctl name="ADC1 Volume" value="4" />
+        <ctl name="ADC4 Volume" value="4" />
     </path>
 
     <path name="speaker-stereo-dmic-ef">
