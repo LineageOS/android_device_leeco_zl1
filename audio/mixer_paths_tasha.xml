@@ -2040,13 +2040,7 @@
     </path>
 
     <path name="speaker-stereo">
-        <ctl name="Boost Output Voltage" value="9V" />
-        <ctl name="Left Feedback Enable" value="ON" />
-        <ctl name="Right Feedback Enable" value="ON" />
-        <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="56" />
-        <ctl name="Left Channel Enable" value="1" />
-        <ctl name="Right Channel Enable" value="1" />
+        <path name="speaker" />
     </path>
 
     <path name="speaker-liquid">
@@ -2256,17 +2250,17 @@
     </path>
 
     <path name="voice-speaker">
-        <path name="speaker-mono" />
-    </path>
-
-    <path name="voice-speaker-stereo">
         <ctl name="Boost Output Voltage" value="9V" />
         <ctl name="Left Feedback Enable" value="ON" />
         <ctl name="Right Feedback Enable" value="ON" />
         <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="63" />
+        <ctl name="Digital Gain" value="56" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="1" />
+    </path>
+
+    <path name="voice-speaker-stereo">
+        <path name="voice-speaker" />
     </path>
 
     <path name="voice-speaker-mic">
@@ -2450,8 +2444,17 @@
     </path>
 
     <path name="voice-rec-mic">
-        <path name="adc4" />
-        <ctl name="ADC4 Volume" value="4" />
+        <ctl name="AIF1_CAP Mixer SLIM TX4" value="1" />
+        <ctl name="AIF1_CAP Mixer SLIM TX7" value="1" />
+        <ctl name="SLIM TX7 MUX" value="DEC7" />
+        <ctl name="ADC MUX7" value="AMIC" />
+        <ctl name="AMIC MUX7" value="ADC1" />
+        <ctl name="SLIM TX4 MUX" value="DEC4" />
+        <ctl name="ADC MUX4" value="AMIC" />
+        <ctl name="AMIC MUX4" value="ADC4" />
+        <ctl name="SLIM_0_TX Channels" value="Two" />
+        <ctl name="ADC1 Volume" value="20" />
+        <ctl name="ADC4 Volume" value="20" />
     </path>
 
     <path name="audio-rec-mic">
@@ -2535,7 +2538,7 @@
     </path>
 
     <path name="handset-stereo-dmic-ef">
-        <path name="speaker-dmic-endfire" />
+        <path name="handset-dmic-endfire" />
         <ctl name="ADC1 Volume" value="12" />
         <ctl name="ADC4 Volume" value="12" />
     </path>
