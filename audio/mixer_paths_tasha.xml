@@ -2025,7 +2025,7 @@
         <ctl name="Left Feedback Enable" value="ON" />
         <ctl name="Right Feedback Enable" value="ON" />
         <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="56" />
+        <ctl name="Digital Gain" value="80" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="1" />
     </path>
@@ -2034,19 +2034,13 @@
         <ctl name="Boost Output Voltage" value="9V" />
         <ctl name="Right Feedback Enable" value="ON" />
         <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="56" />
+        <ctl name="Digital Gain" value="80" />
         <ctl name="Left Channel Enable" value="0" />
         <ctl name="Right Channel Enable" value="1" />
     </path>
 
     <path name="speaker-stereo">
-        <ctl name="Boost Output Voltage" value="9V" />
-        <ctl name="Left Feedback Enable" value="ON" />
-        <ctl name="Right Feedback Enable" value="ON" />
-        <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="56" />
-        <ctl name="Left Channel Enable" value="1" />
-        <ctl name="Right Channel Enable" value="1" />
+        <path name="speaker" />
     </path>
 
     <path name="speaker-liquid">
@@ -2255,18 +2249,18 @@
         <path name="handset" />
     </path>
 
-    <path name="voice-speaker">
-        <path name="speaker-mono" />
-    </path>
-
     <path name="voice-speaker-stereo">
         <ctl name="Boost Output Voltage" value="9V" />
         <ctl name="Left Feedback Enable" value="ON" />
         <ctl name="Right Feedback Enable" value="ON" />
-        <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="63" />
+        <ctl name="Speaker Volume" value="6" />
+        <ctl name="Digital Gain" value="100" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="1" />
+    </path>
+
+    <path name="voice-speaker">
+        <path name="voice-speaker-stereo" />
     </path>
 
     <path name="voice-speaker-mic">
@@ -2535,7 +2529,7 @@
     </path>
 
     <path name="handset-stereo-dmic-ef">
-        <path name="speaker-dmic-endfire" />
+        <path name="handset-dmic-endfire" />
         <ctl name="ADC1 Volume" value="12" />
         <ctl name="ADC4 Volume" value="12" />
     </path>
