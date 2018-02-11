@@ -415,8 +415,9 @@ vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
 # Display calibration
--etc/qdcm_calib_data_mdss_dsi_ft8716_1080p_video.xml
--etc/qdcm_calib_data_mdss_dsi_s6d6fa1_1080p_video.xml
+etc/qdcm_calib_data_mdss_dsi_ft8716_1080p_video.xml
+etc/qdcm_calib_data_mdss_dsi_s6d6fa1_1080p_video.xml
+etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 
 # Fingerprint sensor
 bin/gx_fpd
