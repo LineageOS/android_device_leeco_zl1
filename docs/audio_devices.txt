@@ -1,0 +1,46 @@
+Handset Voice Call:
+snd_device(25: voice-handset)
+snd_device(105: voice-rec-dmic-ef-fluence)
+acdb_rx = 7
+acdb_tx = 41
+PLAYBACK app_type 69936
+
+Speaker Voice Call:
+snd_device(30: voice-speaker-stereo-nb)
+snd_device(85: voice-speaker-stereo-mic)
+acdb_rx = 220
+acdb_tx = 42
+PLAYBACK app_type 69936
+
+Speaker Musik:
+snd_device(3: speaker-stereo)
+acdb_id = 15
+compress-offload-playback
+PLAYBACK app_type 69936
+
+Headphone Musik:
+snd_device(11: headphones)
+acdb_id = 10
+PLAYBACK app_type 69936
+
+Headphone Voice Call:
+snd_device(35: voice-headphones)
+snd_device(86: voice-headset-mic)
+acdb_rx = 10
+acdb_tx = 8
+PLAYBACK app_type 69936
+
+Handset Voice Rec:
+snd_device(101: voice-rec-mic)
+acdb_id = 40
+CAPTURE app_type 69938
+
+Headset Voice Rec:
+snd_device(81: headset-mic)
+acdb_id = 8
+CAPTURE app_type 69938
+
+Camcorder Video Rec:
+snd_device(94: camcorder-mic)
+acdb_id = 52
+CAPTURE app_type 69938
