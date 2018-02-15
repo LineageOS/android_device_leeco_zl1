@@ -2235,12 +2235,17 @@
     </path>
 
     <path name="speaker-stereo-mic">
-        <ctl name="AIF1_CAP Mixer SLIM TX6" value="1"/>
-        <ctl name="SLIM_0_TX Channels" value="One" />
-        <ctl name="SLIM TX6 MUX" value="DEC6" />
-        <ctl name="ADC MUX6" value="AMIC" />
-        <ctl name="AMIC MUX6" value="ADC1" />
-        <ctl name="ADC1 Volume" value="10" />
+        <ctl name="AIF1_CAP Mixer SLIM TX7" value="1" />
+        <ctl name="AIF1_CAP Mixer SLIM TX8" value="1" />
+        <ctl name="SLIM TX7 MUX" value="DEC7" />
+        <ctl name="ADC MUX7" value="AMIC" />
+        <ctl name="AMIC MUX7" value="ADC1" />
+        <ctl name="SLIM TX8 MUX" value="DEC8" />
+        <ctl name="ADC MUX8" value="AMIC" />
+        <ctl name="AMIC MUX8" value="ADC4" />
+        <ctl name="SLIM_0_TX Channels" value="Two" />
+        <ctl name="ADC1 Volume" value="18" />
+        <ctl name="ADC4 Volume" value="18" />
     </path>
 
     <path name="speaker-mic-liquid">
