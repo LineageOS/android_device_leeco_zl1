@@ -25,9 +25,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on init
-    export LD_SHIM_LIBS "/system/vendor/lib/libmmcamera_ppeiscore.so|libshims_camera.so:/system/bin/mm-qcamera-daemon|libshims_qcamera-daemon.so"
-
 on boot
     # Fingerprint
     chmod 0664 /sys/devices/soc/soc:fpc_fpc1020/irq
