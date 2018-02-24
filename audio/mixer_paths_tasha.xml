@@ -1521,6 +1521,8 @@
         <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_TX" />
         <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="Voice_Tx Mixer SLIM_0_TX_Voice" value="1" />
+        <ctl name="Voice Stub Tx Mixer TERT_MI2S_TX" value="1" />
+        <ctl name="TERT_MI2S_RX_Voice Mixer Voice Stub" value="1" />
     </path>
 
     <path name="voice-call smartpa-handset">
@@ -1567,6 +1569,7 @@
         <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_TX" />
         <ctl name="TERT_MI2S_RX_Voice Mixer Voice2" value="1" />
         <ctl name="Voice2_Tx Mixer SLIM_0_TX_Voice2" value="1" />
+        <ctl name="TERT_MI2S_RX_Voice Mixer Voice2 Stub" value="1" />
     </path>
 
     <path name="voice2-call smartpa-handset">
@@ -1782,6 +1785,7 @@
     <path name="volte-call smartpa">
         <ctl name="TERT_MI2S_RX_Voice Mixer VoLTE" value="1" />
         <ctl name="VoLTE_Tx Mixer SLIM_0_TX_VoLTE" value="1" />
+        <ctl name="TERT_MI2S_RX_Voice Mixer VoLTE Stub" value="1" />
     </path>
 
     <path name="volte-call smartpa-handset">
