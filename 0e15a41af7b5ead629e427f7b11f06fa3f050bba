@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2c192cd4_1124c258",
+        "filename": "device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 16002
+      },
+      "writtenOn": "2018-02-25T13:52:12Z",
+      "side": 1,
+      "message": "this should be 2048 to reduce jank http://gerrit.aicp-rom.com/#/c/41191/",
+      "revId": "0e15a41af7b5ead629e427f7b11f06fa3f050bba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
