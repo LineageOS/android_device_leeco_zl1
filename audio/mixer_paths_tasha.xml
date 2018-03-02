@@ -2686,14 +2686,14 @@
 
     <!-- Dual MIC devices -->
     <path name="handset-dmic-endfire">
-        <ctl name="AIF1_CAP Mixer SLIM TX7" value="1" />
         <ctl name="AIF1_CAP Mixer SLIM TX4" value="1" />
-        <ctl name="SLIM TX7 MUX" value="DEC7" />
-        <ctl name="ADC MUX7" value="AMIC" />
-        <ctl name="AMIC MUX7" value="ADC1" />
+        <ctl name="AIF1_CAP Mixer SLIM TX7" value="1" />
         <ctl name="SLIM TX4 MUX" value="DEC4" />
         <ctl name="ADC MUX4" value="AMIC" />
         <ctl name="AMIC MUX4" value="ADC4" />
+        <ctl name="SLIM TX7 MUX" value="DEC7" />
+        <ctl name="ADC MUX7" value="AMIC" />
+        <ctl name="AMIC MUX7" value="ADC1" />
         <ctl name="SLIM_0_TX Channels" value="Two" />
     </path>
 
@@ -2749,6 +2749,8 @@
 
     <path name="voice-rec-dmic-ef">
         <path name="dmic-endfire" />
+        <ctl name="ADC1 Volume" value="18" />
+        <ctl name="ADC4 Volume" value="18" />
     </path>
 
     <path name="aanc-handset-mic">
@@ -2759,8 +2761,8 @@
 
     <path name="voice-rec-dmic-ef-fluence">
         <path name="dmic-endfire" />
-        <ctl name="ADC1 Volume" value="12" />
-        <ctl name="ADC4 Volume" value="12" />
+        <ctl name="ADC1 Volume" value="18" />
+        <ctl name="ADC4 Volume" value="18" />
     </path>
 
     <path name="handset-stereo-dmic-ef-liquid">

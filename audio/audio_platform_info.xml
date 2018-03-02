@@ -69,12 +69,14 @@
         <device name="SND_DEVICE_IN_HANDSET_MIC_NS" alias="voice-rec-mic"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_AEC_NS" alias="voice-rec-mic"/>
 
-        <device name="SND_DEVICE_IN_HANDSET_DMIC" alias="voice-rec-dmic-ef-fluence"/>
-        <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC" alias="voice-rec-dmic-ef-fluence"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC" alias="voice-rec-dmic-ef"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC" alias="voice-rec-dmic-ef"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_NS" alias="voice-rec-dmic-ef-fluence"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS" alias="voice-rec-dmic-ef-fluence"/>
 
-        <device name="SND_DEVICE_IN_VOICE_DMIC" alias="voice-rec-dmic-ef-fluence"/>
+        <device name="SND_DEVICE_IN_HANDSET_STEREO_DMIC" alias="voice-rec-dmic-ef"/>
+
+        <device name="SND_DEVICE_IN_VOICE_DMIC" alias="voice-rec-dmic-ef"/>
 
         <device name="SND_DEVICE_IN_SPEAKER_MIC" alias="voice-speaker-stereo-mic" />
         <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC" alias="voice-speaker-stereo-mic" />
