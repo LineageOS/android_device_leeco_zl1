@@ -17,16 +17,34 @@ import hashlib
 import common
 import re
 
+def FullOTA_Assertions(info):
+  AddModemAssertion(info)
+  return
+
 def FullOTA_InstallEnd(info):
   info.script.Mount("/system")
   RunCustomScript(info, "deunify.sh", "")
   info.script.Unmount("/system")
   return
 
+def IncrementalOTA_Assertions(info):
+  AddModemAssertion(info)
+  return
+
 def IncrementalOTA_InstallEnd(info):
   info.script.Mount("/system")
   RunCustomScript(info, "deunify.sh", "")
   info.script.Unmount("/system")
+  return
+
+def AddModemAssertion(info):
+  android_info = info.input_zip.read("OTA/android-info.txt")
+  m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info)
+  if m:
+    version = m.group(1).rstrip()
+    if len(version) and '*' not in version:
+      cmd = 'assert(leeco.verify_modem("' + version + '") == "1");'
+      info.script.AppendExtra(cmd)
   return
 
 def RunCustomScript(info, name, arg):
