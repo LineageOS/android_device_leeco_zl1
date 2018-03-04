@@ -24,11 +24,13 @@
 # inherit from msm8996-common
 -include device/leeco/msm8996-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := le_zl0,le_zl1,LEX720,LEX722,LEX727,zl0,zl1
-
 DEVICE_PATH := device/leeco/zl1
 
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
+
+# Assertions
+TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := le_zl0,le_zl1,LEX720,LEX722,LEX727,zl0,zl1
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff loglevel=7
