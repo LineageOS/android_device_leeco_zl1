@@ -2418,6 +2418,8 @@
 
     <path name="voice-handset">
         <path name="handset" />
+        <ctl name="Speaker Volume" value="1" />
+        <ctl name="Digital Gain" value="0" />
     </path>
 
     <path name="voice-handset-tmus">
