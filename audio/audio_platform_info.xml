@@ -33,6 +33,8 @@
         <device name="SND_DEVICE_OUT_VOICE_HANDSET" acdb_id="7"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" acdb_id="220"/>
         <device name="SND_DEVICE_OUT_VOICE_HEADPHONES" acdb_id="10"/>
+        <device name="SND_DEVICE_OUT_ANC_HANDSET" acdb_id="26"/> <!-- Could be also 103 -->
+        <device name="SND_DEVICE_OUT_VOICE_ANC_HEADSET" acdb_id="27"/>
         <!-- Input devices -->
         <device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="40"/>
         <device name="SND_DEVICE_IN_SPEAKER_MIC" acdb_id="42"/>
@@ -43,6 +45,8 @@
         <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="41"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" acdb_id="42"/>
         <device name="SND_DEVICE_IN_VOICE_REC_MIC" acdb_id="40"/>
+        <device name="SND_DEVICE_IN_AANC_HANDSET_MIC" acdb_id="41"/>
+        <device name="SND_DEVICE_IN_VOICE_FLUENCE_DMIC_AANC" acdb_id="44"/>
     </acdb_ids>
 
     <bit_width_configs>
