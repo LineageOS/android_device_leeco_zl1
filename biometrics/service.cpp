@@ -14,14 +14,13 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "biometrics.fingerprint@2.0-service.leeco_zl1"
+#define LOG_TAG "biometrics.fingerprint@2.1-service.leeco_zl1"
 
 #include <binder/IPCThreadState.h>
 #include <binder/IServiceManager.h>
 #include <binder/PermissionCache.h>
 #include <binder/ProcessState.h>
 #include <utils/String16.h>
-#include <keystore/keystore.h> // for error codes
 
 #include <android/log.h>
 #include <hidl/HidlSupport.h>
