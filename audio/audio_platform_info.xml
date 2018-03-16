@@ -114,10 +114,10 @@
         <!-- <device name="SND_DEVICE_IN_VOICE_HEADPHONE_MIC" acdb_id="42"/> -->
         <!-- <device name="SND_DEVICE_IN_VOICE_HEADSET_BACKMIC" acdb_id="42"/> -->
         <device name="SND_DEVICE_IN_HDMI_MIC" acdb_id="8"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MIC" acdb_id="8"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MIC_NREC" acdb_id="8"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB" acdb_id="4"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB_NREC" acdb_id="122"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC" acdb_id="21"/>  <!-- Original: 8 -->
+        <device name="SND_DEVICE_IN_BT_SCO_MIC_NREC" acdb_id="122"/> <!-- Original: 8 -->
+        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB" acdb_id="38"/> <!-- Original: 4 -->
+        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB_NREC" acdb_id="123"/> <!-- Original: 122 -->
         <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="52"/> <!-- Original: 21 -->
         <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="41"/> <!-- Original:123 -->
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" acdb_id="42"/> <!-- Original: 38 -->
