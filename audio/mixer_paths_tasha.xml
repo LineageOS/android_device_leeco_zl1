@@ -2418,16 +2418,22 @@
 
     <path name="voice-speaker">
         <ctl name="Boost Output Voltage" value="9V" />
+        <ctl name="Left Feedback Enable" value="OFF" />
+        <ctl name="Right Feedback Enable" value="ON" />
+        <ctl name="Speaker Volume" value="5" />
+        <ctl name="Digital Gain" value="56" />
+        <ctl name="Left Channel Enable" value="0" />
+        <ctl name="Right Channel Enable" value="1" />
+    </path>
+
+    <path name="voice-speaker-stereo">
+        <ctl name="Boost Output Voltage" value="9V" />
         <ctl name="Left Feedback Enable" value="ON" />
         <ctl name="Right Feedback Enable" value="ON" />
         <ctl name="Speaker Volume" value="5" />
         <ctl name="Digital Gain" value="56" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="1" />
-    </path>
-
-    <path name="voice-speaker-stereo">
-        <path name="voice-speaker" />
     </path>
 
     <path name="voice-speaker-mic">

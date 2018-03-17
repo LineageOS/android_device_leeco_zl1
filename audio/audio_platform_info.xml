@@ -194,8 +194,8 @@
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_NS" alias="voice-speaker-stereo-mic" />
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS" alias="voice-speaker-stereo-mic" />
 
-        <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" alias="voice-speaker-stereo-mic"/>
-        <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" alias="voice-speaker-stereo-mic"/>
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" alias="voice-speaker-dmic-ef"/>
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" alias="voice-speaker-dmic-ef"/>
     </device_names>
 
     <config_params>
