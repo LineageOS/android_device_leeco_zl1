@@ -23,7 +23,7 @@
     <item name="none">0</item>
 
     <!-- This is the battery capacity in mAh -->
-    <item name="battery.capacity">4000</item>
+    <item name="battery.capacity">4070</item>
 
     <!-- Number of cores each CPU cluster contains -->
     <array name="cpu.clusters.cores">
