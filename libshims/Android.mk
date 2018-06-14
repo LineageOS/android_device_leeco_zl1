@@ -36,3 +36,18 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
+
+# fake print lib for hexedited fingerprint libs
+include $(CLEAR_VARS)
+
+LOCAL_SHARED_LIBRARIES := \
+    liblog
+
+LOCAL_SRC_FILES := fakelogprint/fakelogprint.cpp
+
+LOCAL_MODULE := fakelogprint
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_VENDOR_MODULE := true
+
+include $(BUILD_SHARED_LIBRARY)
