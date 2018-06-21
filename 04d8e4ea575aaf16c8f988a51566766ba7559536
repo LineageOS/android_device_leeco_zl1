@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "35914392_9f37ca81",
+        "filename": "device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 523
+      },
+      "writtenOn": "2018-06-21T13:47:33Z",
+      "side": 1,
+      "message": "Fake log print for fingerprint libs",
+      "range": {
+        "startLine": 94,
+        "startChar": 2,
+        "endLine": 94,
+        "endChar": 6
+      },
+      "revId": "04d8e4ea575aaf16c8f988a51566766ba7559536",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ddae5209_c061864c",
+        "filename": "libshims/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 523
+      },
+      "writtenOn": "2018-06-21T13:47:33Z",
+      "side": 1,
+      "message": "fakeprint vs fakelg\nMaybe name the folder and cpp fakelog or fakelogprint",
+      "range": {
+        "startLine": 22,
+        "startChar": 29,
+        "endLine": 22,
+        "endChar": 38
+      },
+      "revId": "04d8e4ea575aaf16c8f988a51566766ba7559536",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
