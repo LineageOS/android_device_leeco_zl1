@@ -24,8 +24,6 @@
 #include <inttypes.h>
 #include <unistd.h>
 
-fingerprint_device_t* getWrapperService(fingerprint_notify_t);
-
 namespace android {
 namespace hardware {
 namespace biometrics {
@@ -40,8 +38,11 @@ BiometricsFingerprint *BiometricsFingerprint::sInstance = nullptr;
 
 BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevice(nullptr) {
     sInstance = this; // keep track of the most recent instance
-
-    mDevice = getWrapperService(BiometricsFingerprint::notify);
+    if (is_goodix) {
+        mDevice = getWrapperService(BiometricsFingerprint::notify);
+    } else {
+        mDevice = openHal();
+    }
 
     if (!mDevice) {
         ALOGE("Can't open HAL module");
