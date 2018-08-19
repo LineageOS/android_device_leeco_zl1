@@ -389,8 +389,19 @@ etc/firmware/cppf.b05
 etc/firmware/cppf.b06
 etc/firmware/cppf.mbn
 etc/firmware/cppf.mdt
+etc/firmware/widevine.b00
+etc/firmware/widevine.b01
+etc/firmware/widevine.b02
+etc/firmware/widevine.b03
+etc/firmware/widevine.b04
+etc/firmware/widevine.b05
+etc/firmware/widevine.b06
+etc/firmware/widevine.mbn
+etc/firmware/widevine.mdt
+vendor/lib/libcppf.so
 vendor/lib/libmdtp.so
 vendor/lib/libmdtp_crypto.so
+vendor/lib/liboemcrypto.so
 vendor/lib64/libmdtp.so
 vendor/lib64/libmdtp_crypto.so
 
