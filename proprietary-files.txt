@@ -419,7 +419,7 @@ vendor/firmware/Signedrompatch_v20.bin
 vendor/firmware/Signedrompatch_v21.bin
 vendor/firmware/Signedrompatch_v24.bin
 vendor/firmware/Signedrompatch_v30.bin
-vendor/firmware/libpn548ad_fw.so
+vendor/lib/libpn548ad_fw.so
 
 # NFC - SmartcardService
 -vendor/app/SmartcardService/SmartcardService.apk
