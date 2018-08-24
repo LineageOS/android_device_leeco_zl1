@@ -53,7 +53,7 @@ on boot
 
 on post-fs-data
 
-service gx_fpd /system/bin/gx_fpd
+service gx_fpd /vendor/bin/gx_fpd
     class late_start
     user system
     group system
