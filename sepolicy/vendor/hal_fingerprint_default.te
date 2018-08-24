@@ -1,0 +1,8 @@
+typeattribute hal_fingerprint_default binder_in_vendor_violators;
+
+allow hal_fingerprint_default goodix_service:service_manager { find };
+
+#allow hal_fingerprint_default goodix_service:service_manager { add };
+#add_service(hal_fingerprint_default, goodix_service);
+
+binder_use(hal_fingerprint_default);
