@@ -6,53 +6,53 @@ vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-etc/drc/drc_cfg_AZ.txt
-etc/dts/dts-m6m8-lic.key
+vendor/etc/drc/drc_cfg_AZ.txt
+vendor/etc/dts/dts-m6m8-lic.key
 
 # Bluetooth firmware
-etc/firmware/nvm_tlv.bin
-etc/firmware/nvm_tlv_1.3.bin
-etc/firmware/nvm_tlv_2.1.bin
-etc/firmware/nvm_tlv_3.0.bin
-etc/firmware/nvm_tlv_3.2.bin
-etc/firmware/rampatch_tlv.img
-etc/firmware/rampatch_tlv_1.3.tlv
-etc/firmware/rampatch_tlv_2.1.tlv
-etc/firmware/rampatch_tlv_3.0.tlv
-etc/firmware/rampatch_tlv_3.2.tlv
+vendor/firmware/nvm_tlv.bin
+vendor/firmware/nvm_tlv_1.3.bin
+vendor/firmware/nvm_tlv_2.1.bin
+vendor/firmware/nvm_tlv_3.0.bin
+vendor/firmware/nvm_tlv_3.2.bin
+vendor/firmware/rampatch_tlv.img
+vendor/firmware/rampatch_tlv_1.3.tlv
+vendor/firmware/rampatch_tlv_2.1.tlv
+vendor/firmware/rampatch_tlv_3.0.tlv
+vendor/firmware/rampatch_tlv_3.2.tlv
 
 # Camera
-bin/mm-qcamera-daemon
-etc/camera/imx298_chromatix.xml
-etc/camera/imx298_ofilm_ak_chromatix.xml
-etc/camera/imx298_ofilm_chromatix.xml
-etc/camera/imx298_truly_ak_chromatix.xml
-etc/camera/msm8996_camera.xml
-etc/camera/ov8865_chromatix.xml
-etc/camera/ov8865_ofilm_chromatix.xml
-etc/camera/ov8865_ofilm_plus_chromatix.xml
-etc/camera/ov8865_sunny_chromatix.xml
-lib/libLetvCameraImageSDK.so
-lib/libamipengine.so
-lib/libarcsoft_antishaking.so
-lib/libarcsoft_beautyshot.so
-lib/libarcsoft_beautyshot_image_algorithm.so
-lib/libarcsoft_beautyshot_video_algorithm.so
-lib/libarcsoft_hdr.so
-lib/libarcsoft_hdr_detection.so
-lib/libarcsoft_night_shot.so
-lib/libarcsoft_nighthawk.so
-lib/libarcsoft_panorama_burstcapture.so
-lib/libarcsoft_smart_denoise.so
-lib/libcamera_letv_algo.so
-lib/libletv_algo_jni.so
-lib/libmm-qcamera.so
-lib/libmpbase.so
-lib/libmpkernel.so
-lib/libmpstream.so
-lib/libmputility.so
-lib/libqrDec.so
-lib/libzeusisCameraAlgoSceneDetection.so
+vendor/bin/mm-qcamera-daemon|a59f653f44d5049bebd86e9f431070ef356e76f4
+vendor/etc/camera/imx298_chromatix.xml
+vendor/etc/camera/imx298_ofilm_ak_chromatix.xml
+vendor/etc/camera/imx298_ofilm_chromatix.xml
+vendor/etc/camera/imx298_truly_ak_chromatix.xml
+vendor/etc/camera/msm8996_camera.xml
+vendor/etc/camera/ov8865_chromatix.xml
+vendor/etc/camera/ov8865_ofilm_chromatix.xml
+vendor/etc/camera/ov8865_ofilm_plus_chromatix.xml
+vendor/etc/camera/ov8865_sunny_chromatix.xml
+vendor/lib/libLetvCameraImageSDK.so
+vendor/lib/libamipengine.so
+vendor/lib/libarcsoft_antishaking.so
+vendor/lib/libarcsoft_beautyshot.so
+vendor/lib/libarcsoft_beautyshot_image_algorithm.so
+vendor/lib/libarcsoft_beautyshot_video_algorithm.so
+vendor/lib/libarcsoft_hdr.so
+vendor/lib/libarcsoft_hdr_detection.so
+vendor/lib/libarcsoft_night_shot.so
+vendor/lib/libarcsoft_nighthawk.so
+vendor/lib/libarcsoft_panorama_burstcapture.so
+vendor/lib/libarcsoft_smart_denoise.so
+vendor/lib/libcamera_letv_algo.so
+vendor/lib/libletv_algo_jni.so
+vendor/lib/libmm-qcamera.so
+vendor/lib/libmpbase.so
+vendor/lib/libmpkernel.so
+vendor/lib/libmpstream.so
+vendor/lib/libmputility.so
+vendor/lib/libqrDec.so
+vendor/lib/libzeusisCameraAlgoSceneDetection.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
@@ -69,9 +69,9 @@ vendor/lib/libmmcamera2_memleak.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_sensor_modules.so|91bf96b3c2eaddaac45223d368d6582efce3a886
 vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_stats_modules.so|bbb27781a39ec60c991ccf027d23eab3a9721bf2
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dummyalgo.so
 vendor/lib/libmmcamera_eebinparse.so
@@ -320,15 +320,15 @@ vendor/lib/libchromatix_imx298_zsl_snapshot.so
 vendor/lib/libchromatix_imx298_zsl_video.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_5_0.fw
-etc/firmware/cpp_firmware_v1_5_2.fw
-etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/cpp_firmware_v1_8_0.fw
+vendor/firmware/cpp_firmware_v1_1_1.fw
+vendor/firmware/cpp_firmware_v1_1_6.fw
+vendor/firmware/cpp_firmware_v1_10_0.fw
+vendor/firmware/cpp_firmware_v1_2_0.fw
+vendor/firmware/cpp_firmware_v1_4_0.fw
+vendor/firmware/cpp_firmware_v1_5_0.fw
+vendor/firmware/cpp_firmware_v1_5_2.fw
+vendor/firmware/cpp_firmware_v1_6_0.fw
+vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera sensors
 vendor/lib/libmmcamera_isp_abf47.so
@@ -380,51 +380,51 @@ vendor/etc/qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 vendor/lib64/libmm-qdcm-diag.so
 
 # DRM
-etc/firmware/cppf.b00
-etc/firmware/cppf.b01
-etc/firmware/cppf.b02
-etc/firmware/cppf.b03
-etc/firmware/cppf.b04
-etc/firmware/cppf.b05
-etc/firmware/cppf.b06
-etc/firmware/cppf.mbn
-etc/firmware/cppf.mdt
+vendor/firmware/cppf.b00
+vendor/firmware/cppf.b01
+vendor/firmware/cppf.b02
+vendor/firmware/cppf.b03
+vendor/firmware/cppf.b04
+vendor/firmware/cppf.b05
+vendor/firmware/cppf.b06
+vendor/firmware/cppf.mbn
+vendor/firmware/cppf.mdt
 vendor/lib/libmdtp.so
 vendor/lib/libmdtp_crypto.so
 vendor/lib64/libmdtp.so
 vendor/lib64/libmdtp_crypto.so
 
 # Fingerprint sensor
-bin/gx_fpd
-lib64/hw/gxfingerprint5118m.default.so
-lib64/libfp_client5118m.so
-lib64/libfpnav5118m.so
-lib64/libfpservice5118m.so
-lib64/hw/fingerprint.msm8996.so:lib64/hw/fingerprint.vendor.msm8996.so
+vendor/bin/gx_fpd
+vendor/lib64/hw/gxfingerprint5118m.default.so
+vendor/lib64/libfp_client5118m.so
+vendor/lib64/libfpnav5118m.so
+vendor/lib64/libfpservice5118m.so
+vendor/lib64/hw/fingerprint.msm8996.so:vendor/lib64/hw/fingerprint.vendor.msm8996.so
 
 # NFC firmware
-etc/firmware/nfc_test.bin
-etc/firmware/Signedrompatch_v20.bin
-etc/firmware/Signedrompatch_v21.bin
-etc/firmware/Signedrompatch_v24.bin
-etc/firmware/Signedrompatch_v30.bin
+vendor/firmware/nfc_test.bin
+vendor/firmware/Signedrompatch_v20.bin
+vendor/firmware/Signedrompatch_v21.bin
+vendor/firmware/Signedrompatch_v24.bin
+vendor/firmware/Signedrompatch_v30.bin
 vendor/firmware/libpn548ad_fw.so
 
 # Qualcomm Assertive Display
-etc/ad_calib.cfg
-etc/ad_calib_le_zl1.cfg
+vendor/etc/ad_calib.cfg
+vendor/etc/ad_calib_le_zl1.cfg
 
 # Radio - MBN
-etc/firmware/modem_pr/mbn_upgrade_info
-etc/firmware/modem_pr/mcfg_sw_att.mbn
-etc/firmware/modem_pr/mcfg_sw_cmcc.mbn
-etc/firmware/modem_pr/mcfg_sw_ct.mbn
-etc/firmware/modem_pr/mcfg_sw_cu.mbn
-etc/firmware/modem_pr/mcfg_sw_others.mbn
-etc/firmware/modem_pr/mcfg_sw_reliance.mbn
-etc/firmware/modem_pr/mcfg_sw_sprint.mbn
-etc/firmware/modem_pr/mcfg_sw_tmo.mbn
-etc/firmware/modem_pr/mcfg_sw_verizon.mbn
+vendor/firmware/modem_pr/mbn_upgrade_info
+vendor/firmware/modem_pr/mcfg_sw_att.mbn
+vendor/firmware/modem_pr/mcfg_sw_cmcc.mbn
+vendor/firmware/modem_pr/mcfg_sw_ct.mbn
+vendor/firmware/modem_pr/mcfg_sw_cu.mbn
+vendor/firmware/modem_pr/mcfg_sw_others.mbn
+vendor/firmware/modem_pr/mcfg_sw_reliance.mbn
+vendor/firmware/modem_pr/mcfg_sw_sprint.mbn
+vendor/firmware/modem_pr/mcfg_sw_tmo.mbn
+vendor/firmware/modem_pr/mcfg_sw_verizon.mbn
 
 # Signed graphics firmware
 vendor/firmware/a530_gpmu.fw2
@@ -453,40 +453,39 @@ vendor/firmware/zl0/a530_zap.b01
 vendor/firmware/zl0/a530_zap.b02
 vendor/firmware/zl0/a530_zap.elf
 vendor/firmware/zl0/a530_zap.mdt
-etc/firmware/leia_pfp_470.fw
-etc/firmware/leia_pm4_470.fw
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
 
 # USB firmware
-etc/firmware/cyccg.cybin
-etc/firmware/cyccg_table.cybin
-etc/firmware/sii6400_wihd_mhl.fw
+vendor/firmware/cyccg.cybin
+vendor/firmware/cyccg_table.cybin
+vendor/firmware/sii6400_wihd_mhl.fw
 
 # Unsorted
-bin/ftmdaemon
-bin/ks
-bin/ppd
-bin/ssr_diag
-bin/ssr_setup
-bin/tloc_daemon
-etc/qxdm/1.cfg
-etc/qxdm/gps_log.cfg
-etc/usf/form_factor_mtp.cfg
-etc/usf/mixer/mixer_paths_mtp.xml
-etc/usf/proximity/cfg_mtp/usf_pocket_apps_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_pocket_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_pocket_mtp_algo_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_proximity_apps_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_algo_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_debug.cfg
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_rx_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_proximity_mtp_tx_transparent_data.bin
-etc/usf/proximity/cfg_mtp/usf_ranging_apps_mtp.cfg
-etc/usf/proximity/cfg_mtp/usf_ranging_mtp_algo_transparent_data.bin
-etc/usf/readme.txt
-etc/usf/version.txt
+vendor/bin/ftmdaemon
+vendor/bin/ppd
+vendor/bin/ssr_diag
+vendor/bin/ssr_setup
+vendor/bin/tloc_daemon
 vendor/bin/mdtpd
 vendor/bin/mm-pp-daemon
+vendor/etc/qxdm/1.cfg
+vendor/etc/qxdm/gps_log.cfg
+vendor/etc/usf/form_factor_mtp.cfg
+vendor/etc/usf/mixer/mixer_paths_mtp.xml
+vendor/etc/usf/proximity/cfg_mtp/usf_pocket_apps_mtp.cfg
+vendor/etc/usf/proximity/cfg_mtp/usf_pocket_mtp.cfg
+vendor/etc/usf/proximity/cfg_mtp/usf_pocket_mtp_algo_transparent_data.bin
+vendor/etc/usf/proximity/cfg_mtp/usf_proximity_apps_mtp.cfg
+vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp.cfg
+vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_algo_transparent_data.bin
+vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_debug.cfg
+vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_rx_transparent_data.bin
+vendor/etc/usf/proximity/cfg_mtp/usf_proximity_mtp_tx_transparent_data.bin
+vendor/etc/usf/proximity/cfg_mtp/usf_ranging_apps_mtp.cfg
+vendor/etc/usf/proximity/cfg_mtp/usf_ranging_mtp_algo_transparent_data.bin
+vendor/etc/usf/readme.txt
+vendor/etc/usf/version.txt
 vendor/lib/libqcproximity.so
 vendor/lib/libual.so
 vendor/lib/libualutil.so
