@@ -1,2 +1,0 @@
-allow tee goodix_data_file:dir { r_dir_perms };
-allow tee goodix_data_file:file { r_file_perms };
