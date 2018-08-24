@@ -22,7 +22,7 @@ etc/firmware/rampatch_tlv_3.0.tlv
 etc/firmware/rampatch_tlv_3.2.tlv
 
 # Camera
-bin/mm-qcamera-daemon
+vendor/bin/mm-qcamera-daemon
 etc/camera/imx298_chromatix.xml
 etc/camera/imx298_ofilm_ak_chromatix.xml
 etc/camera/imx298_ofilm_chromatix.xml
@@ -395,12 +395,12 @@ vendor/lib64/libmdtp.so
 vendor/lib64/libmdtp_crypto.so
 
 # Fingerprint sensor
-bin/gx_fpd
-lib64/hw/gxfingerprint5118m.default.so
-lib64/libfp_client5118m.so
-lib64/libfpnav5118m.so
-lib64/libfpservice5118m.so
-lib64/hw/fingerprint.msm8996.so:lib64/hw/fingerprint.vendor.msm8996.so
+vendor/bin/gx_fpd
+vendor/lib64/hw/gxfingerprint5118m.default.so
+vendor/lib64/libfp_client5118m.so
+vendor/lib64/libfpnav5118m.so
+vendor/lib64/libfpservice5118m.so
+vendor/lib64/hw/fingerprint.msm8996.so:vendor/lib64/hw/fingerprint.vendor.msm8996.so
 
 # NFC firmware
 etc/firmware/nfc_test.bin
@@ -411,8 +411,8 @@ etc/firmware/Signedrompatch_v30.bin
 vendor/firmware/libpn548ad_fw.so
 
 # Qualcomm Assertive Display
-etc/ad_calib.cfg
-etc/ad_calib_le_zl1.cfg
+vendor/etc/ad_calib.cfg
+vendor/etc/ad_calib_le_zl1.cfg
 
 # Radio - MBN
 etc/firmware/modem_pr/mbn_upgrade_info

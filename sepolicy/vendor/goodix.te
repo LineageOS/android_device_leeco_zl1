@@ -1,0 +1,4 @@
+type goodix, domain;
+type goodix_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(goodix)
