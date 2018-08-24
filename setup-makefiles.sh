@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +20,10 @@ set -e
 
 # Required!
 export DEVICE=zl1
+export DEVICE_COMMON=msm8996-common
 export VENDOR=leeco
 
+export DEVICE_BRINGUP_YEAR=2016
+
 # Call the common extractor
-../msm8996-common/setup-makefiles.sh $@
+./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
