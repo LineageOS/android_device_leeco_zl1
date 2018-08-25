@@ -16,6 +16,23 @@
       "revId": "415a3cd47cd152d4d8bddc0dc615101bad9088f5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b6b2319b_babc86ee",
+        "filename": "liblight/Android.bp",
+        "patchSetId": 6
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2018-08-25T03:09:10Z",
+      "side": 1,
+      "message": "I think we\u0027ll need to rename this for leeco_zl1 and leeco_x2 unless we can find a way to commonize our lights.\n\nx2 uses wled for backlight and we don\u0027t have rgb_blink.\n\nerror: device/leeco/x2/liblight/Android.bp:16:1: module \"android.hardware.light@2.0-service.leeco_8996\" already defined\nerror: device/leeco/zl1/liblight/Android.bp:16:1: \u003c-- previous definition here\nninja: build stopped: subcommand failed.",
+      "revId": "415a3cd47cd152d4d8bddc0dc615101bad9088f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
