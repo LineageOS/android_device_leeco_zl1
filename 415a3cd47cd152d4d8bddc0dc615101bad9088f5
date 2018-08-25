@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e936131b_f855a182",
+        "filename": "device.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2018-08-25T02:46:13Z",
+      "side": 1,
+      "message": "might want to take this opportunity to move fake logprint to be above NFC instead of in the middle of it",
+      "revId": "415a3cd47cd152d4d8bddc0dc615101bad9088f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
