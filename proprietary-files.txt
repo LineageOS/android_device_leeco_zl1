@@ -474,7 +474,6 @@ vendor/firmware/sii6400_wihd_mhl.fw
 
 # Unsorted
 vendor/bin/ftmdaemon
-vendor/bin/ppd
 vendor/bin/ssr_diag
 vendor/bin/ssr_setup
 vendor/bin/tloc_daemon
