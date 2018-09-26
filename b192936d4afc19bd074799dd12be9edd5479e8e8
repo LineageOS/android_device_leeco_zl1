@@ -22,6 +22,29 @@
       "revId": "b192936d4afc19bd074799dd12be9edd5479e8e8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dc3b071a_89ffaa76",
+        "filename": "device.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-09-26T20:08:47Z",
+      "side": 1,
+      "message": "All these are built by default.",
+      "range": {
+        "startLine": 75,
+        "startChar": 0,
+        "endLine": 78,
+        "endChar": 23
+      },
+      "revId": "b192936d4afc19bd074799dd12be9edd5479e8e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
