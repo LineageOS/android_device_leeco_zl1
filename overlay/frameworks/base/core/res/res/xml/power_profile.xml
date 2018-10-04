@@ -36,7 +36,7 @@
 
     <!-- Different CPU speeds as reported in
          /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies -->
-    <array name="cpu.speeds.cluster0">
+    <array name="cpu.core_speeds.cluster0">
         <value>307200</value> <!-- 307 MHz CPU speed -->
         <value>384000</value> <!-- 384 MHz CPU speed -->
         <value>460800</value> <!-- 460 MHz CPU speed -->
@@ -59,7 +59,7 @@
     </array>
     <!-- Different CPU speeds as reported in
          /sys/devices/system/cpu/cpu2/cpufreq/scaling_available_frequencies -->
-    <array name="cpu.speeds.cluster1">
+    <array name="cpu.core_speeds.cluster1">
         <value>307200</value> <!-- 307 MHz CPU speed -->
         <value>384000</value> <!-- 384 MHz CPU speed -->
         <value>460800</value> <!-- 460 MHz CPU speed -->
@@ -90,7 +90,7 @@
     </array>
     <!-- Additional power used by a CPU from cluster 0 when running at different
          speeds. Currently this measurement also includes cluster cost. -->
-    <array name="cpu.active.cluster0">
+    <array name="cpu.core_power.cluster0">
         <value>110</value> <!-- 307 MHz CPU speed -->
         <value>113</value> <!-- 384 MHz CPU speed -->
         <value>124</value> <!-- 460 MHz CPU speed -->
@@ -113,7 +113,7 @@
     </array>
     <!-- Additional power used by a CPU from cluster 1 when running at different
          speeds. Currently this measurement also includes cluster cost. -->
-    <array name="cpu.active.cluster1">
+    <array name="cpu.core_power.cluster1">
         <value>104</value> <!-- 307 MHz CPU speed -->
         <value>117</value> <!-- 384 MHz CPU speed -->
         <value>131</value> <!-- 460 MHz CPU speed -->
