@@ -421,6 +421,11 @@ vendor/firmware/Signedrompatch_v24.bin
 vendor/firmware/Signedrompatch_v30.bin
 vendor/firmware/libpn548ad_fw.so
 
+# NFC - SmartcardService
+-system/priv-app/SmartcardService/SmartcardService.apk
+etc/permissions/org.simalliance.openmobileapi.xml
+framework/org.simalliance.openmobileapi.jar
+
 # Qualcomm Assertive Display
 vendor/etc/ad_calib.cfg
 vendor/etc/ad_calib_le_zl1.cfg
