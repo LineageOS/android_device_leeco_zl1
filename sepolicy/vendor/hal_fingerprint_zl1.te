@@ -17,7 +17,7 @@ allow hal_fingerprint_zl1 tee_device:chr_file { rw_file_perms };
 allow hal_fingerprint_zl1 uhid_device:chr_file { rw_file_perms };
 
 allow hal_fingerprint_zl1 fingerprintd_data_file:dir { rw_dir_perms };
-allow hal_fingerprint_zl1 fingerprintd_data_file:file { rw_file_perms };
+allow hal_fingerprint_zl1 fingerprintd_data_file:file { create_file_perms };
 
 set_prop(hal_fingerprint_zl1, system_prop)
 r_dir_file(hal_fingerprint_zl1, firmware_file)
