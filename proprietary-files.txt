@@ -236,10 +236,8 @@ vendor/firmware/widevine.b05|e33e45e86a113960ee9f5177765a2e2600022309
 vendor/firmware/widevine.b06|b3edf85b2966de96911297a3b639911ffcdc3584
 vendor/firmware/widevine.mbn|5356712b2a84690c04a8826a953364204eec9ff6
 vendor/firmware/widevine.mdt|f2850975428d8e1cf4faa91398422a64ef207825
-vendor/lib/libcppf.so|ffe9b66afcb7823cdbfb1987d26f367082a5f5a8
-vendor/lib/libmdtp.so|7f8d19d0a9446d28f2d001a12be296144486bdbc
-vendor/lib/libmdtp_crypto.so|64903f908dfcba578408b8b8d57ff4709f9e0e56
-vendor/lib/liboemcrypto.so|04d435d09593ac0452fe78cdb0b61ceb43f59556
+vendor/lib/libcppf.so|b508684c7af39366506ed783f4b67b4abaa997f2
+vendor/lib/liboemcrypto.so|edf9f109d85e5f396e3b054bf323d2403609e1e1
 vendor/lib64/libmdtp.so|f5dd059bf23923f23a4e5e78584dcc7deff2df6c
 vendor/lib64/libmdtp_crypto.so|bd7f1530de721f31e1990cb9c4e3b3a22da77494
 
