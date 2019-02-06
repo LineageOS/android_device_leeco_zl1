@@ -2,7 +2,7 @@ type hal_fingerprint_zl1, domain, binder_in_vendor_violators;
 hal_server_domain(hal_fingerprint_zl1, hal_fingerprint)
 
 type hal_fingerprint_zl1_exec, exec_type, vendor_file_type, file_type;
-binder_use(hal_fingerprint_zl1)
+
 init_daemon_domain(hal_fingerprint_zl1)
 
 binder_call(hal_fingerprint_zl1, gx_fpd)
@@ -16,8 +16,9 @@ allow hal_fingerprint_zl1 fingerprint_service:service_manager { find };
 allow hal_fingerprint_zl1 tee_device:chr_file { rw_file_perms };
 allow hal_fingerprint_zl1 uhid_device:chr_file { rw_file_perms };
 
-allow hal_fingerprint_zl1 fingerprintd_data_file:dir { rw_dir_perms };
-allow hal_fingerprint_zl1 fingerprintd_data_file:file { create_file_perms };
+# FIXME
+#allow hal_fingerprint_zl1 fingerprintd_data_file:dir { rw_dir_perms };
+#allow hal_fingerprint_zl1 fingerprintd_data_file:file { create_file_perms };
 
 set_prop(hal_fingerprint_zl1, system_prop)
 r_dir_file(hal_fingerprint_zl1, firmware_file)
