@@ -174,7 +174,16 @@ Return<uint64_t> BiometricsFingerprint::getAuthenticatorId() {
 }
 
 Return<RequestStatus> BiometricsFingerprint::cancel() {
-      return ErrorFilter(mDevice->cancel(mDevice));
+      /* notify client on cancel hack */
+    int ret = mDevice->cancel(mDevice);
+    ALOG(LOG_VERBOSE, LOG_TAG, "cancel() %d\n", ret);
+    if (ret == 0) {
+        fingerprint_msg_t msg;
+        msg.type = FINGERPRINT_ERROR;
+        msg.data.error = FINGERPRINT_ERROR_CANCELED;
+        mDevice->notify(&msg);
+    }
+    return ErrorFilter(ret);
 }
 
 #define MAX_FINGERPRINTS 100
@@ -217,7 +226,8 @@ Return<RequestStatus> BiometricsFingerprint::setActiveGroup(uint32_t gid,
         return RequestStatus::SYS_EINVAL;
     }
     int ret = mDevice->set_active_group(mDevice, gid, storePath.c_str());
-    if (ret > 0)
+    /* set active group hack for goodix */
+    if ((ret > 0) && is_goodix)
         ret = 0;
     return ErrorFilter(ret);
 }
@@ -345,7 +355,7 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
     }
 }
 
-} // namespace implementation
+}  // namespace implementation
 }  // namespace V2_1
 }  // namespace fingerprint
 }  // namespace biometrics
