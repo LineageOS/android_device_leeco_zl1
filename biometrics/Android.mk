@@ -9,10 +9,7 @@ LOCAL_VENDOR_MODULE := true
 
 LOCAL_SRC_FILES := \
     BiometricsFingerprint.cpp \
-    service.cpp \
-    fingerprintd/FingerprintDaemonProxy.cpp \
-    fingerprintd/IFingerprintDaemon.cpp \
-    fingerprintd/wrapper.cpp
+    service.cpp
 
 LOCAL_SHARED_LIBRARIES := \
     libbinder \
