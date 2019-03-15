@@ -241,7 +241,8 @@ vendor/firmware/Signedrompatch_v20.bin
 vendor/firmware/Signedrompatch_v21.bin
 vendor/firmware/Signedrompatch_v24.bin
 vendor/firmware/Signedrompatch_v30.bin
-vendor/lib/libpn548ad_fw.so
+# from oneplus3
+vendor/lib/libpn548ad_fw.so|dc7a63b9ad4322835bed91ac0ad584fd6c79fa35
 
 # NFC (SmartcardService)
 -vendor/app/SmartcardService/SmartcardService.apk
