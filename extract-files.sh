@@ -16,6 +16,15 @@
 # limitations under the License.
 #
 
+function blob_fixup() {
+	case "${1}" in
+
+	# binhaxxed to load cppf firmware from /vendor/firmware/
+	vendor/lib/libcppf.so)
+		sed -i -e 's|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g' "${2}"
+	esac
+}
+
 # If we're being sourced by the common script that we called,
 # stop right here. No need to go down the rabbit hole.
 if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
@@ -28,7 +37,7 @@ export DEVICE=zl1
 export DEVICE_COMMON=msm8996-common
 export VENDOR=leeco
 
-export DEVICE_BRINGUP_YEAR=2016
+export DEVICE_BRINGUP_YEAR=2017
 
 # Use common extractor
 source "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
