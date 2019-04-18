@@ -28,8 +28,6 @@ vendor/lib/libmmcamera_ov8865_ofilm_plus.so|ae572a76cf06f1ebccd71ba61b78fe9699f8
 vendor/lib/libmmcamera_ov8865_plus_eeprom.so|6fcea0ae2c35eb56179d4c92b24378007f247f61
 vendor/lib/libmmcamera_ov8865_sunny.so|af85b9eecccc6d6b04bfe46937f52a9c0e809388
 vendor/lib/libmmcamera_sony_imx298_eeprom.so|c31ba4c22252798196d9817a8350aa5bf5e58f6a
-vendor/lib/libSonyIMX230_lg_PdafLibrary.so|50719675b89123ef9fb0047a07970f14c9840736
-vendor/lib/libSonyIMX230_sunny_PdafLibrary.so|50719675b89123ef9fb0047a07970f14c9840736
 vendor/lib/libSonyIMX298_ofilm_ak_PdafLibrary.so|35639e3e12e35337cb984a7c52637426e6758d83
 vendor/lib/libSonyIMX298_ofilm_PdafLibrary.so|35639e3e12e35337cb984a7c52637426e6758d83
 vendor/lib/libSonyIMX298PdafLibrary.so|35639e3e12e35337cb984a7c52637426e6758d83
@@ -37,12 +35,8 @@ vendor/lib/libSonyIMX298_truly_ak_PdafLibrary.so|35639e3e12e35337cb984a7c5263742
 
 # Camera actuators - from zl1 - 6.0.1/WAXCNFN5902012312S/letv01060151
 vendor/lib/libactuator_ak7371.so|8bdb68099858a23c0a505bc1395feaf1021c49a0
-vendor/lib/libactuator_bu63165.so|2e823d666d11374919a23e19fb34803816479953
-vendor/lib/libactuator_bu64297.so|064348032ed0b01cb933c663e8f0528d84d9d719
 vendor/lib/libactuator_dw9714.so|2519efff7e147e9742d4a09b4df597c7d27341a8
 vendor/lib/libactuator_dw9800w.so|9f46ab4212e3e0b889cdbf1f18e11a18b37a66c0
-vendor/lib/libactuator_lc898122.so|d653da88cd59bcb8ac9a9b6f66cba52cd1710c8a
-vendor/lib/libactuator_lc898212xd.so|46762cb2114cb02280ffa9995055770687b35689
 
 # Camera chromatix (imx298) - from zl1 - 6.0.1/WAXCNFN5902012312S/letv01060151
 vendor/lib/libchromatix_imx298_1080p_preview.so|51001e720df909e575366224193c1e9b1e6d62ca
