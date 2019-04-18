@@ -236,14 +236,8 @@ lib64/libfp_client5118m.so:vendor/lib64/libfp_client5118m.so
 lib64/libfpnav5118m.so:vendor/lib64/libfpnav5118m.so
 lib64/libfpservice5118m.so:vendor/lib64/libfpservice5118m.so
 
-# NFC firmware
-etc/firmware/nfc_test.bin:vendor/firmware/nfc_test.bin
-etc/firmware/Signedrompatch_v20.bin:vendor/firmware/Signedrompatch_v20.bin
-etc/firmware/Signedrompatch_v21.bin:vendor/firmware/Signedrompatch_v21.bin
-etc/firmware/Signedrompatch_v24.bin:vendor/firmware/Signedrompatch_v24.bin
-etc/firmware/Signedrompatch_v30.bin:vendor/firmware/Signedrompatch_v30.bin
-# from oneplus3
-vendor/lib/libpn548ad_fw.so|dc7a63b9ad4322835bed91ac0ad584fd6c79fa35
+# NFC firmware - from oneplus3 - 9/PKQ1.181203.001/1903190014
+vendor/lib/libpn548ad_fw.so|e78f2c9e7a5cb0001d2f71a69f37ec8261fb05b8
 
 # NFC (SmartcardService) - from caf
 -vendor/app/SmartcardService/SmartcardService.apk|217cbd3eb44ec9c0c55bbfeafb3b0a77910bd41b
