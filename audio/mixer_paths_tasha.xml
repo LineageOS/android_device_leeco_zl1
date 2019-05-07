@@ -1612,9 +1612,9 @@
     </path>
 
     <path name="play-fm headphones">
-       <ctl name="Tert MI2S LOOPBACK Volume" value="1" />
-       <ctl name="SLIMBUS_6_RX Port Mixer TERT_MI2S_TX" value="1" />
-       <ctl name="SLIMBUS6_DL_HL Switch" value="1" />
+        <ctl name="Tert MI2S LOOPBACK Volume" value="1" />
+        <ctl name="SLIMBUS_6_RX Port Mixer TERT_MI2S_TX" value="1" />
+        <ctl name="SLIMBUS6_DL_HL Switch" value="1" />
     </path>
 
     <path name="incall-rec-uplink">
@@ -1745,7 +1745,7 @@
         <ctl name="AUX_PCM_RX Audio Mixer MultiMedia6" value="1" />
         <ctl name="MultiMedia6 Mixer SLIM_0_TX" value="1" />
         <ctl name="SLIMBUS_DL_HL Switch" value="1" />
-   </path>
+    </path>
 
     <path name="hfp-sco headphones">
         <ctl name="HFP_PRI_AUX_UL_HL Switch" value="1" />
@@ -1755,10 +1755,10 @@
         <ctl name="SLIMBUS6_DL_HL Switch" value="1" />
     </path>
 
-   <path name="hfp-sco-wb">
+    <path name="hfp-sco-wb">
         <ctl name="AUX PCM SampleRate" value="16000" />
         <path name="hfp-sco" />
-   </path>
+    </path>
 
     <path name="hfp-sco-wb headphones">
         <ctl name="AUX PCM SampleRate" value="16000" />
@@ -1823,11 +1823,13 @@
     <path name="compress-voip-call smartpa">
         <ctl name="TERT_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
+        <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_TX" />
     </path>
 
     <path name="compress-voip-call smartpa-handset">
         <ctl name="TERT_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
+        <ctl name="VOC_EXT_EC MUX" value="TERT_MI2S_TX" />
     </path>
 
     <path name="compress-voip-call headphones">
@@ -2238,6 +2240,10 @@
         <ctl name="ADC MUX6" value="AMIC" />
         <ctl name="AMIC MUX6" value="ADC1" />
         <ctl name="ADC1 Volume" value="10" />
+    </path>
+
+    <path name="echo-reference-audio-ec-speaker">
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="TERT_MI2S_TX" />
     </path>
 
     <path name="speaker-mic-liquid">
