@@ -27,3 +27,9 @@
 
 on boot
     chmod 0644 /dev/smartpa_f0_detect
+
+    # NFC
+    chmod 0666 /dev/pn544
+    chown nfc nfc /dev/pn544
+    chmod 0666 /dev/p61
+    chown spi spi /dev/p61
