@@ -27,11 +27,3 @@
 
 on boot
     chmod 0644 /dev/smartpa_f0_detect
-
-    # NFC
-    chmod 0666 /dev/pn544
-    chown nfc nfc /dev/pn544
-
-on post-fs-data
-    # Nfc
-    mkdir /data/vendor/nfc 0770 nfc nfc

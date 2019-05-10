@@ -230,9 +230,6 @@ lib64/libfp_client5118m.so:vendor/lib64/libfp_client5118m.so|b115345ac2b5702c2fa
 lib64/libfpnav5118m.so:vendor/lib64/libfpnav5118m.so
 lib64/libfpservice5118m.so:vendor/lib64/libfpservice5118m.so|188d19de45579a41c06a751b8ac43cb3584c5610
 
-# NFC firmware - from oneplus3 - 9/PKQ1.181203.001/1903190014
-vendor/lib/libpn548ad_fw.so|e78f2c9e7a5cb0001d2f71a69f37ec8261fb05b8
-
 # Offline charger
 vendor/bin/charger|93f3883cc2fd0d271d559408d760b0ed71ac2928
 
