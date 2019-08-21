@@ -33,3 +33,7 @@ on boot
     chown nfc nfc /dev/pn544
     chmod 0666 /dev/p61
     chown spi spi /dev/p61
+
+on post-fs-data
+    # Nfc
+    mkdir /data/vendor/nfc 0770 nfc nfc
