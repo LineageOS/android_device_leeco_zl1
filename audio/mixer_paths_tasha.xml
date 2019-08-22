@@ -1612,9 +1612,9 @@
     </path>
 
     <path name="play-fm headphones">
-       <ctl name="Tert MI2S LOOPBACK Volume" value="1" />
-       <ctl name="SLIMBUS_6_RX Port Mixer TERT_MI2S_TX" value="1" />
-       <ctl name="SLIMBUS6_DL_HL Switch" value="1" />
+        <ctl name="Tert MI2S LOOPBACK Volume" value="1" />
+        <ctl name="SLIMBUS_6_RX Port Mixer TERT_MI2S_TX" value="1" />
+        <ctl name="SLIMBUS6_DL_HL Switch" value="1" />
     </path>
 
     <path name="incall-rec-uplink">
@@ -1745,7 +1745,7 @@
         <ctl name="AUX_PCM_RX Audio Mixer MultiMedia6" value="1" />
         <ctl name="MultiMedia6 Mixer SLIM_0_TX" value="1" />
         <ctl name="SLIMBUS_DL_HL Switch" value="1" />
-   </path>
+    </path>
 
     <path name="hfp-sco headphones">
         <ctl name="HFP_PRI_AUX_UL_HL Switch" value="1" />
@@ -1755,10 +1755,10 @@
         <ctl name="SLIMBUS6_DL_HL Switch" value="1" />
     </path>
 
-   <path name="hfp-sco-wb">
+    <path name="hfp-sco-wb">
         <ctl name="AUX PCM SampleRate" value="16000" />
         <path name="hfp-sco" />
-   </path>
+    </path>
 
     <path name="hfp-sco-wb headphones">
         <ctl name="AUX PCM SampleRate" value="16000" />
@@ -2469,6 +2469,7 @@
         <path name="headphones" />
         <path name="speaker" />
     </path>
+
     <path name="speaker-and-line-liquid">
         <path name="speaker-and-headphones-liquid" />
     </path>
