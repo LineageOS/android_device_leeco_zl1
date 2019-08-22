@@ -236,6 +236,10 @@ vendor/lib/libpn548ad_fw.so|e78f2c9e7a5cb0001d2f71a69f37ec8261fb05b8
 # Qualcomm Assertive Display
 etc/ad_calib_le_zl1.cfg:vendor/etc/ad_calib_le_zl1.cfg
 
+# Sensor configuration - from zl1 and modified to work for Oreo and above
+etc/sensors/hals.conf:vendor/etc/sensors/hals.conf|6a7532ce2776bbf40912c7d279aa1251e5526993
+etc/sensors/sensor_def_qcomdev.conf:vendor/etc/sensors/sensor_def_qcomdev.conf|07752377e081407c738c42be3921c860de364099
+
 # Signed graphics firmware (zl1)
 etc/firmware/a530_zap.b00:vendor/firmware/a530_zap.b00
 etc/firmware/a530_zap.b01:vendor/firmware/a530_zap.b01
