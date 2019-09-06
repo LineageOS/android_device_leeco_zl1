@@ -45,9 +45,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 58134835200
 
 # SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 #BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # inherit from the proprietary version
 -include vendor/leeco/zl1/BoardConfigVendor.mk
