@@ -38,6 +38,8 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 
 TARGET_KERNEL_CONFIG := lineage_zl1_defconfig
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
@@ -48,6 +50,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 58134835200
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 #BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # inherit from the proprietary version
 -include vendor/leeco/zl1/BoardConfigVendor.mk
