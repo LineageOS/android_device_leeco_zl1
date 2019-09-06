@@ -16,7 +16,7 @@
 #define LOG_NDEBUG 0
 #define LOG_TAG "FingerprintDaemonProxy"
 
-#include <android/security/IKeystoreService.h>
+#include <android/security/keystore/IKeystoreService.h>
 #include <cutils/properties.h>
 #include <binder/IServiceManager.h>
 #include <hardware/hardware.h>
@@ -96,7 +96,7 @@ void FingerprintDaemonProxy::notifyKeystore(const uint8_t *auth_token, const siz
         // TODO: cache service?
         sp < IServiceManager > sm = defaultServiceManager();
         sp < IBinder > binder = sm->getService(String16("android.security.keystore"));
-        sp<security::IKeystoreService> service = interface_cast<security::IKeystoreService>(binder);
+        sp<android::security::keystore::IKeystoreService> service = interface_cast<android::security::keystore::IKeystoreService>(binder);
         if (service != NULL) {
             std::vector<uint8_t> auth_token_vector(auth_token, (auth_token) + auth_token_length);
                 int result = 0;
