@@ -233,6 +233,9 @@ lib64/libfpservice5118m.so:vendor/lib64/libfpservice5118m.so
 # NFC firmware - from oneplus3 - 9/PKQ1.181203.001/1903190014
 vendor/lib/libpn548ad_fw.so|e78f2c9e7a5cb0001d2f71a69f37ec8261fb05b8
 
+# Offline charger
+vendor/bin/charger|93f3883cc2fd0d271d559408d760b0ed71ac2928
+
 # Qualcomm Assertive Display
 etc/ad_calib_le_zl1.cfg:vendor/etc/ad_calib_le_zl1.cfg
 
