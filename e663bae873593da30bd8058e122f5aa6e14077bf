@@ -16,6 +16,24 @@
       "revId": "e663bae873593da30bd8058e122f5aa6e14077bf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6cbfc701_cdd07d55",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2020-03-03T03:46:18Z",
+      "side": 1,
+      "message": "nevermind, looks like this is part of the original commit message too.",
+      "parentUuid": "ba0fdd8c_5ee51bc2",
+      "revId": "e663bae873593da30bd8058e122f5aa6e14077bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
