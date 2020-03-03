@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba0fdd8c_5ee51bc2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2020-03-03T03:44:00Z",
+      "side": 1,
+      "message": "do we want this line?",
+      "revId": "e663bae873593da30bd8058e122f5aa6e14077bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
