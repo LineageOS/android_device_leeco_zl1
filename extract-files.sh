@@ -26,9 +26,35 @@ function blob_fixup() {
         sed -i "s|/firmware/image|/vendor/f/image|g" "${2}"
         ;;
 
+    # Patch fingerprint blobs to load custom libbinder
+    vendor/bin/hw/android.hardware.biometrics.fingerprint@2.0-service.leeco_zl1)
+        sed -i "s|libbinder.so|libgxbndr.so|g" "${2}"
+        ;;
+
+    # Patch fingerprint blobs to load custom libbinder
+    vendor/bin/gx_fpd)
+        sed -i "s|libbinder.so|libgxbndr.so|g" "${2}"
+        ;;
+
+    # Patch fingerprint blobs to load custom libbinder
+    vendor/lib64/hw/fingerprint.msm8996.so)
+        sed -i "s|libbinder.so|libgxbndr.so|g" "${2}"
+        ;;
+
     # Hex edit /firmware/image to /vendor/firmware_mnt to delete the outdated rootdir symlinks
     vendor/lib64/hw/gxfingerprint5118m.default.so)
         sed -i "s|/firmware/image|/vendor/f/image|g" "${2}"
+        ;;
+
+    # Patch fingerprint blobs to load custom libbinder
+    vendor/lib64/libfpservice5118m.so)
+        sed -i "s|libbinder.so|libgxbndr.so|g" "${2}"
+        ;;
+
+    # Patch fingerprint blobs to load custom libbinder
+    vendor/lib64/libfp_client5118m.so)
+        sed -i "s|libbinder.so|libgxbndr.so|g" "${2}"
+        ;;
     esac
 }
 
