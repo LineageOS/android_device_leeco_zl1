@@ -2744,6 +2744,9 @@
         <path name="speaker-dmic-endfire" />
     </path>
 
+    <path name="aanc-path">
+    </path>
+
     <path name="aanc-handset-mic">
         <path name="dmic-endfire" />
         <ctl name="ADC1 Volume" value="12" />
