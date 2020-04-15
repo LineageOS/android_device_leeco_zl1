@@ -49,5 +49,9 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 #BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+   /vendor/lib64/hw/fingerprint.msm8996.so|libshims_goodix.so
+
 # inherit from the proprietary version
 -include vendor/leeco/zl1/BoardConfigVendor.mk

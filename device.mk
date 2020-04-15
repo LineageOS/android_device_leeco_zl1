@@ -66,6 +66,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/synaptics.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics.kl \
     $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_dsx.kl
 
+# Libshims
+PRODUCT_PACKAGES += \
+    libshims_goodix
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1-service \
