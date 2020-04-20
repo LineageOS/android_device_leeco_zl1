@@ -35,4 +35,13 @@ r_dir_file(gx_fpd, firmware_file)
 
 #register service in service manager
 allow gx_fpd default_android_service:service_manager find;
-add_service(gx_fpd, gx_fpd_service);
+add_service(gx_fpd, vnd_gx_fpd_service);
+
+# RW persmissions for /dev/vndbinder
+allow gx_fpd vndbinder_device:chr_file { rw_file_perms };
+
+allow gx_fpd vndservicemanager:binder { call transfer };
+
+allow gx_fpd vnd_gx_fpd_service:service_manager { find };
+
+allow gx_fpd vnd_hal_fingerprint_zl1_service:service_manager { add };

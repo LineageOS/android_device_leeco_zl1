@@ -1,0 +1,2 @@
+goodix.fp                                             u:object_r:vnd_gx_fpd_service:s0
+android.hardware.fingerprint.IFingerprintCustomDaemon u:object_r:vnd_hal_fingerprint_zl1_service:s0
