@@ -5,12 +5,14 @@ type hal_fingerprint_zl1_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(hal_fingerprint_zl1)
 
+binder_call(hal_fingerprint_zl1, vndservicemanager)
 binder_call(hal_fingerprint_zl1, gx_fpd)
 binder_use(hal_fingerprint_zl1)
 
 add_service(hal_fingerprint_zl1, hal_fingerprint_zl1_service);
 
-allow hal_fingerprint_zl1 gx_fpd_service:service_manager { find };
+allow hal_fingerprint_zl1 vnd_hal_fingerprint_zl1_service:service_manager { find };
+allow hal_fingerprint_zl1 vnd_gx_fpd_service:service_manager { find };
 allow hal_fingerprint_zl1 fingerprint_service:service_manager { find };
 
 allow hal_fingerprint_zl1 tee_device:chr_file { rw_file_perms };
@@ -32,3 +34,8 @@ allow hal_fingerprint_zl1 keystore_service:service_manager { find };
 # For permissions checking
 binder_call(hal_fingerprint_zl1, system_server);
 allow hal_fingerprint_zl1 permission_service:service_manager { find };
+
+# RW persmissions for /dev/vndbinder
+allow hal_fingerprint_zl1 vndbinder_device:chr_file { rw_file_perms };
+
+allow hal_fingerprint_zl1 gx_fpd:binder { call transfer };

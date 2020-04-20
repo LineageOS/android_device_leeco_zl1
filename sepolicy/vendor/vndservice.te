@@ -1,0 +1,2 @@
+type vnd_gx_fpd_service,              vndservice_manager_type;
+type vnd_hal_fingerprint_zl1_service, vndservice_manager_type;
