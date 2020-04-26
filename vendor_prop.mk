@@ -18,4 +18,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.qfp=false
+    persist.qfp=false \
+    ro.hardware.fingerprint=goodix
