@@ -26,7 +26,6 @@
 
 #include "BiometricsFingerprint.h"
 #include <cutils/properties.h>
-#include <binder/ProcessState.h>
 #include <errno.h>
 #include <unistd.h>
 
@@ -61,8 +60,9 @@ int main() {
             return 1;
         }
 
-        // the conventional HAL might start binder services
-        android::ProcessState::initWithDriver("/dev/binder");
+        // the conventional HAL might start vndbinder services
+        android::ProcessState::initWithDriver("/dev/vndbinder");
+        // start a threadpool for vndbinder interactions
         android::ProcessState::self()->startThreadPool();
     }
 
