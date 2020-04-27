@@ -222,9 +222,9 @@ etc/firmware/cppf.mbn:vendor/firmware/cppf.mbn
 etc/firmware/cppf.mdt:vendor/firmware/cppf.mdt
 vendor/lib/libcppf.so
 
-# Fingerprint sensor - from zl1 - 6.0.1/WAXCNFN6003009091S/113 - pinned files hex edited for Q libbinder
-bin/gx_fpd:vendor/bin/gx_fpd
-lib64/hw/fingerprint.msm8996.so:vendor/lib64/hw/fingerprint.msm8996.so
+# Fingerprint sensor - from zl1 - 6.0.1/WAXCNFN6003009091S/113 - pinned files hex edited for Q libbinder and vndk
+bin/gx_fpd:vendor/bin/gx_fpd|a2aba383a989888e9a1df6437e6605643061aa68
+lib64/hw/fingerprint.msm8996.so:vendor/lib64/hw/fingerprint.msm8996.so|057588ee507ffa131aa7a29bb0f6ced40e2bfeec
 lib64/hw/gxfingerprint5118m.default.so:vendor/lib64/hw/gxfingerprint5118m.default.so
 lib64/libfp_client5118m.so:vendor/lib64/libfp_client5118m.so|b115345ac2b5702c2fae3f6255e42c90b2959f20
 lib64/libfpnav5118m.so:vendor/lib64/libfpnav5118m.so
