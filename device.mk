@@ -53,7 +53,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.0-service.leeco_zl1
+    android.hardware.biometrics.fingerprint@2.0-service.leeco_zl1 \
+    libbacktrace-vendor \
+    libstdc++.vendor \
+    libunwind-vendor
 
 # Init
 PRODUCT_COPY_FILES += \
@@ -65,6 +68,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/fts_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fts_ts.kl \
     $(LOCAL_PATH)/keylayout/synaptics.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics.kl \
     $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_dsx.kl
+
+# Libshims
+PRODUCT_PACKAGES += \
+    libshims_gxfpd
 
 # NFC
 PRODUCT_PACKAGES += \
