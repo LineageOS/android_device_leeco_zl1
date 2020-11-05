@@ -18,13 +18,13 @@ function blob_fixup() {
 
     # Patch blobs for VNDK
     vendor/bin/gx_fpd)
-        patchelf --remove-needed "libunwind.so" "${2}"
-        patchelf --remove-needed "libbacktrace.so" "${2}"
+        "${PATCHELF}" --remove-needed "libunwind.so" "${2}"
+        "${PATCHELF}" --remove-needed "libbacktrace.so" "${2}"
         ;;
 
     # Patch blobs for VNDK
     vendor/lib64/hw/fingerprint.msm8996.so)
-        patchelf --remove-needed "libandroid_runtime.so" "${2}"
+        "${PATCHELF}" --remove-needed "libandroid_runtime.so" "${2}"
         ;;
 
     # Hex edit /firmware/image to /vendor/firmware_mnt to delete the outdated rootdir symlinks
