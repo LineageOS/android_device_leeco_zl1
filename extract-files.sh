@@ -18,8 +18,8 @@ function blob_fixup() {
 
     # Patch blobs for VNDK
     vendor/bin/gx_fpd)
-        patchelf --replace-needed "libunwind.so" "libunwind-vendor.so" "${2}" 
-        patchelf --replace-needed "libbacktrace.so" "libbacktrace-vendor.so" "${2}"
+        patchelf --remove-needed "libunwind.so" "${2}"
+        patchelf --remove-needed "libbacktrace.so" "${2}"
         ;;
 
     # Patch blobs for VNDK
